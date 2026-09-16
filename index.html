@@ -1,0 +1,1661 @@
+<!doctype html>
+<html lang="ru" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<title>БОО 2026 — проверка знаний</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no, maximum-scale=1">
+<meta name="description" content="Автономный тренажёр для проверки знания правил безопасного обращения с оружием">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)">
+
+<!-- iOS: home screen / standalone -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="БОО 2026">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9ItCR0J7QniAyMDI2Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyYjM1NTAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTIxNzIyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0idXJsKCNnKSIvPgogIDxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRjOGRmZiIgc3Ryb2tlLXdpZHRoPSIyMiI+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNDgiIHI9IjEzMiIvPgogICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjQ4IiByPSI4MCIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNDgiIHI9IjMwIiBmaWxsPSIjNGM4ZGZmIi8+CiAgPGcgc3Ryb2tlPSIjZThlYWYwIiBzdHJva2Utd2lkdGg9IjIwIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTI1NiA3NHY0NE0yNTYgMzc4djQ0TTgyIDI0OGg0NE0zODYgMjQ4aDQ0Ii8+CiAgPC9nPgo8L3N2Zz4K" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+/* ==========================================================================
+   БОО 2026 — стили. Целевое устройство: iPhone 11 Pro (375×812 @3x), iOS Safari.
+   Принципы: безопасные зоны (notch/home indicator), тач-цели ≥44px,
+   отсутствие зума по двойному тапу, один экран без горизонтального скролла.
+   ========================================================================== */
+
+:root {
+  --bg:            #0f1115;
+  --bg-elev:       #171a21;
+  --bg-elev-2:     #1f2430;
+  --line:          #2a3140;
+  --text:          #e8eaf0;
+  --text-dim:      #9aa3b5;
+  --text-faint:    #6b7488;
+  --accent:        #4c8dff;
+  --accent-soft:   rgba(76,141,255,.14);
+  --ok:            #34c759;
+  --ok-soft:       rgba(52,199,89,.15);
+  --bad:           #ff453a;
+  --bad-soft:      rgba(255,69,58,.15);
+  --warn:          #ffd60a;
+  --radius:        14px;
+  --radius-sm:     10px;
+  --tap:           44px;
+  --safe-t:        env(safe-area-inset-top, 0px);
+  --safe-b:        env(safe-area-inset-bottom, 0px);
+  --safe-l:        env(safe-area-inset-left, 0px);
+  --safe-r:        env(safe-area-inset-right, 0px);
+  --topbar-h:      52px;
+  --tabbar-h:      54px;
+  color-scheme: dark;
+}
+
+html[data-theme="light"], :root[data-theme="auto"] {
+  /* перекрывается медиазапросом ниже; значения по умолчанию — тёмные */
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-theme="auto"] {
+    --bg:          #f5f6f8;
+    --bg-elev:     #ffffff;
+    --bg-elev-2:   #eef0f4;
+    --line:        #dfe3ea;
+    --text:        #12151c;
+    --text-dim:    #5b6373;
+    --text-faint:  #8d95a5;
+    --accent:      #0a63e6;
+    --accent-soft: rgba(10,99,230,.10);
+    --ok:          #1e9e4a;
+    --ok-soft:     rgba(30,158,74,.12);
+    --bad:         #d02b20;
+    --bad-soft:    rgba(208,43,32,.12);
+    color-scheme: light;
+  }
+}
+
+html[data-theme="light"] {
+  --bg:          #f5f6f8;
+  --bg-elev:     #ffffff;
+  --bg-elev-2:   #eef0f4;
+  --line:        #dfe3ea;
+  --text:        #12151c;
+  --text-dim:    #5b6373;
+  --text-faint:  #8d95a5;
+  --accent:      #0a63e6;
+  --accent-soft: rgba(10,99,230,.10);
+  --ok:          #1e9e4a;
+  --ok-soft:     rgba(30,158,74,.12);
+  --bad:         #d02b20;
+  --bad-soft:    rgba(208,43,32,.12);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0; padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.45 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior: none;
+}
+
+body { position: fixed; inset: 0; overflow: hidden; }
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; }
+a { color: var(--accent); text-decoration: none; }
+
+/* Отключает двойной тап-зум на интерактивных элементах и убирает задержку 300 мс
+   без JS-перехвата touch-событий. */
+button, a, label, select, input, .opt, .tab { touch-action: manipulation; }
+
+/* ------------------------------ каркас ---------------------------------- */
+
+.app {
+  position: absolute; inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+}
+.app[hidden] { display: none; }
+
+.topbar {
+  display: flex; align-items: center; gap: 4px;
+  padding: var(--safe-t) calc(8px + var(--safe-r)) 0 calc(8px + var(--safe-l));
+  height: calc(var(--topbar-h) + var(--safe-t));
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--line);
+  position: relative; z-index: 3;
+}
+.topbar__title {
+  flex: 1; margin: 0; min-width: 0;
+  font-size: 17px; font-weight: 600; letter-spacing: -.01em;
+  text-align: center;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.topbar__slot { min-width: var(--tap); display: flex; justify-content: flex-end; align-items: center; }
+.icon-btn {
+  width: var(--tap); height: var(--tap);
+  display: grid; place-items: center; flex: none;
+  color: var(--accent); border-radius: 50%;
+}
+.icon-btn[hidden] { display: none; }
+.icon-btn svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.icon-btn:active { background: var(--bg-elev-2); }
+
+.screen {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding: 16px calc(16px + var(--safe-r)) 24px calc(16px + var(--safe-l));
+  outline: none;
+}
+
+.tabbar {
+  display: flex;
+  padding-bottom: var(--safe-b);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 1px solid var(--line);
+}
+.tabbar[hidden] { display: none; }
+.tab {
+  flex: 1; height: var(--tabbar-h);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  color: var(--text-faint); font-size: 10px; font-weight: 500;
+}
+.tab svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.tab[aria-current="page"] { color: var(--accent); }
+
+/* ---------------------------- типовые блоки ----------------------------- */
+
+.card {
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.card--tight { padding: 12px 14px; }
+
+.section-title {
+  margin: 20px 0 8px;
+  font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text-faint);
+}
+.section-title:first-child { margin-top: 4px; }
+
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; min-height: 50px; padding: 12px 16px;
+  border-radius: var(--radius);
+  background: var(--accent); color: #fff;
+  font-size: 16px; font-weight: 600;
+  transition: transform .08s ease, opacity .15s ease;
+  text-align: center;
+}
+.btn:active { transform: scale(.985); opacity: .9; }
+.btn--secondary { background: var(--bg-elev-2); color: var(--text); border: 1px solid var(--line); }
+.btn--ghost { background: transparent; color: var(--accent); min-height: var(--tap); }
+.btn--danger { background: var(--bad-soft); color: var(--bad); }
+.btn:disabled { opacity: .45; }
+.btn + .btn { margin-top: 10px; }
+
+.menu { background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.menu__item {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%; min-height: 58px; padding: 10px 14px;
+  text-align: left; color: var(--text);
+  border-bottom: 1px solid var(--line);
+}
+.menu__item:last-child { border-bottom: 0; }
+.menu__item:active { background: var(--bg-elev-2); }
+.menu__icon {
+  width: 34px; height: 34px; flex: none; border-radius: 9px;
+  display: grid; place-items: center; font-size: 17px;
+  background: var(--accent-soft); color: var(--accent);
+}
+/* Заголовок и подпись верстаются span'ами внутри <button>/<label>
+   (вложенный блочный элемент в кнопке невалиден) — поэтому display задаём явно. */
+.menu__body, .check__body { flex: 1; min-width: 0; display: block; }
+.menu__title { display: block; font-size: 16px; font-weight: 600; line-height: 1.25; }
+.menu__sub { display: block; font-size: 13px; line-height: 1.3; color: var(--text-dim); margin-top: 2px; }
+.menu__chev { color: var(--text-faint); font-size: 20px; line-height: 1; }
+
+.row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.muted { color: var(--text-dim); }
+.small { font-size: 13px; }
+.tiny  { font-size: 12px; }
+.center { text-align: center; }
+.mt8 { margin-top: 8px; } .mt16 { margin-top: 16px; } .mt24 { margin-top: 24px; }
+
+.pill {
+  display: inline-block; padding: 3px 9px; border-radius: 999px;
+  font-size: 12px; font-weight: 600;
+  background: var(--bg-elev-2); color: var(--text-dim);
+}
+.pill--ok  { background: var(--ok-soft);  color: var(--ok); }
+.pill--bad { background: var(--bad-soft); color: var(--bad); }
+
+.bar { height: 6px; border-radius: 3px; background: var(--bg-elev-2); overflow: hidden; }
+.bar__fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .35s ease; }
+.bar__fill--ok { background: var(--ok); }
+
+/* ------------------------------ вопрос ---------------------------------- */
+
+.quiz { display: flex; flex-direction: column; min-height: 100%; }
+
+.quiz__meta {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 13px; color: var(--text-dim); margin-bottom: 8px;
+}
+.quiz__progress { margin-bottom: 16px; }
+
+.quiz__q {
+  font-size: 17px; line-height: 1.4; font-weight: 500;
+  margin: 0 0 16px;
+  hyphens: auto; -webkit-hyphens: auto;
+}
+
+.opts { display: flex; flex-direction: column; gap: 10px; }
+.opt {
+  display: flex; gap: 12px; align-items: flex-start;
+  width: 100%; padding: 13px 14px; text-align: left;
+  background: var(--bg-elev);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text); font-size: 15px; line-height: 1.38;
+  transition: background .15s ease, border-color .15s ease;
+}
+.opt:active { background: var(--bg-elev-2); }
+.opt__n {
+  flex: none; width: 24px; height: 24px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--bg-elev-2); color: var(--text-dim);
+  font-size: 13px; font-weight: 700;
+}
+.opt__t { flex: 1; min-width: 0; }
+.opt[data-state="picked"]  { border-color: var(--accent); background: var(--accent-soft); }
+.opt[data-state="picked"] .opt__n { background: var(--accent); color: #fff; }
+.opt[data-state="right"]   { border-color: var(--ok); background: var(--ok-soft); }
+.opt[data-state="right"] .opt__n { background: var(--ok); color: #fff; }
+.opt[data-state="wrong"]   { border-color: var(--bad); background: var(--bad-soft); }
+.opt[data-state="wrong"] .opt__n { background: var(--bad); color: #fff; }
+.opt:disabled { opacity: 1; }
+
+.verdict {
+  margin-top: 14px; padding: 12px 14px; border-radius: var(--radius);
+  font-size: 14px; font-weight: 600;
+}
+.verdict--ok  { background: var(--ok-soft);  color: var(--ok); }
+.verdict--bad { background: var(--bad-soft); color: var(--bad); }
+
+.quiz__foot { margin-top: auto; padding-top: 18px; }
+/* После ответа панель прилипает к низу: вопросы бывают на два экрана,
+   и искать «Далее» прокруткой — лишняя работа для пользователя. */
+.quiz__foot--pinned {
+  position: sticky; bottom: -24px; z-index: 2;
+  padding-bottom: 24px;
+  background: linear-gradient(to top, var(--bg) 72%, transparent);
+}
+
+.timer { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 15px; }
+.timer--alarm { color: var(--bad); }
+
+/* ------------------------------ результат -------------------------------- */
+
+.result-hero { text-align: center; padding: 22px 0 10px; }
+.result-hero__mark {
+  width: 84px; height: 84px; margin: 0 auto 14px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 40px;
+}
+.result-hero__mark--ok  { background: var(--ok-soft);  color: var(--ok); }
+.result-hero__mark--bad { background: var(--bad-soft); color: var(--bad); }
+.result-hero__title { font-size: 24px; font-weight: 700; margin: 0 0 6px; }
+.result-hero__sub { color: var(--text-dim); font-size: 15px; margin: 0; }
+
+.review { margin-top: 8px; }
+.review__item { border-bottom: 1px solid var(--line); padding: 12px 0; }
+.review__item:last-child { border-bottom: 0; }
+.review__q { font-size: 14px; line-height: 1.35; margin-bottom: 6px; }
+.review__a { font-size: 13px; line-height: 1.35; padding-left: 16px; position: relative; }
+.review__a::before { content: '—'; position: absolute; left: 0; }
+.review__a--ok  { color: var(--ok); }
+.review__a--bad { color: var(--bad); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--bad) 50%, transparent); }
+
+/* ------------------------------ прочее ---------------------------------- */
+
+.check {
+  display: flex; align-items: center; gap: 12px;
+  min-height: 52px; padding: 8px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.check:last-child { border-bottom: 0; }
+.check input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; }
+
+.switch { position: relative; width: 50px; height: 30px; flex: none; }
+.switch input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; }
+.switch__track {
+  position: absolute; inset: 0; border-radius: 999px; background: var(--bg-elev-2);
+  transition: background .2s ease; pointer-events: none;
+}
+.switch__track::after {
+  content: ''; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px;
+  border-radius: 50%; background: #fff; transition: transform .2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.switch input:checked + .switch__track { background: var(--ok); }
+.switch input:checked + .switch__track::after { transform: translateX(20px); }
+
+.seg { display: flex; background: var(--bg-elev-2); border-radius: var(--radius-sm); padding: 3px; gap: 3px; }
+.seg__btn {
+  flex: 1; min-height: 36px; border-radius: 8px; font-size: 14px; font-weight: 600;
+  color: var(--text-dim);
+}
+.seg__btn[aria-pressed="true"] { background: var(--bg-elev); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,.25); }
+
+.empty { text-align: center; padding: 48px 20px; color: var(--text-dim); }
+.empty__icon { font-size: 44px; margin-bottom: 12px; }
+
+.stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.stat {
+  background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px;
+}
+.stat__v { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat__l { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+
+.hist { font-size: 13px; }
+.hist__row { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.hist__row:last-child { border-bottom: 0; }
+
+/* ------------------------------ служебное -------------------------------- */
+
+.boot { position: fixed; inset: 0; display: grid; place-items: center; background: var(--bg); }
+.boot[hidden] { display: none; }
+.boot__spinner {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 3px solid var(--line); border-top-color: var(--accent);
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.toast {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(var(--tabbar-h) + var(--safe-b) + 16px);
+  max-width: 88%; padding: 11px 16px; border-radius: 999px;
+  background: var(--bg-elev-2); border: 1px solid var(--line);
+  color: var(--text); font-size: 14px; text-align: center;
+  z-index: 50; box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  animation: toast-in .2s ease;
+}
+.toast[hidden] { display: none; }
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, 8px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+</style>
+</head>
+<body>
+
+<div id="app" class="app" hidden>
+  <header class="topbar" id="topbar">
+    <button class="icon-btn" id="btn-back" type="button" aria-label="Назад" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <h1 class="topbar__title" id="topbar-title">БОО 2026</h1>
+    <div class="topbar__slot" id="topbar-slot"></div>
+  </header>
+
+  <main class="screen" id="screen" tabindex="-1"></main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Разделы">
+    <a class="tab" href="#/" data-tab="/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span>Главная</span>
+    </a>
+    <a class="tab" href="#/study" data-tab="/study">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h7v14H4zM13 5h7v14h-7z"/></svg>
+      <span>Билеты</span>
+    </a>
+    <a class="tab" href="#/errors" data-tab="/errors">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l9 16H3zM12 10v4M12 17v.5"/></svg>
+      <span>Ошибки</span>
+    </a>
+    <a class="tab" href="#/stats" data-tab="/stats">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9M12 19V5M19 19v-6"/></svg>
+      <span>Статистика</span>
+    </a>
+  </nav>
+</div>
+
+<div id="boot" class="boot"><div class="boot__spinner"></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+/* Банк вопросов: проверка знания правил безопасного обращения с оружием.
+   Источник: https://xn--c1aclbzo8e.xn--p1ai/testing/ (редакция от 14.06.2026)
+   Формат строки: [id, тема, номер_верного_ответа(1..3), вопрос, вариант1, вариант2, вариант3] */
+const THEMES = { 1: 'Правовая подготовка', 2: 'Огневая подготовка' };
+const BANK_VERSION = '2026-06-14';
+const RAW = [
+[1,1,2,"В соответствии с Федеральным законом «Об оружии» граждане Российской Федерации могут применять имеющееся у них на законных основаниях оружие:","Для защиты чести и достоинства граждан при любой угрозе данным правоохраняемым интересам","Для защиты жизни, здоровья и собственности в состоянии необходимой обороны или крайней необходимости","Только для защиты жизни и здоровья в состоянии необходимой обороны или крайней необходимости"],
+[2,1,3,"В соответствии с Федеральным законом «Об оружии» применению оружия должно предшествовать четко выраженное предупреждение об этом лица, против которого применяется оружие:","Во всех случаях применения оружия","Кроме случаев, когда правонарушитель скрывается с места правонарушения","За исключением случаев, когда промедление в применении оружия создает непосредственную опасность для жизни людей или может повлечь за собой иные тяжкие последствия"],
+[3,1,3,"В соответствии с Федеральным законом «Об оружии» применение огнестрельного оружия гражданами в отношении женщин, лиц с явными признаками инвалидности и несовершеннолетних, когда их возраст очевиден или известен допускается:","В случае применения оружия при ограниченной видимости вследствие погодных условий","В случае значительного скопления людей","В случае совершения указанными лицами группового или вооруженного нападения"],
+[4,1,3,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации ношение и перевозка в границах населенных пунктов пневматического оружия в заряженном или снаряженном состоянии:","Разрешается","Разрешается для лиц, занимающихся стрелковым спортом","Запрещается"],
+[5,1,1,"В соответствии с Федеральным законом «Об оружии» лицензия на приобретение оружия не выдается гражданам Российской Федерации:","Не имеющим медицинского заключения об отсутствии медицинских противопоказаний к владению оружием и медицинского заключения об отсутствии в организме человека наркотических средств, психотропных веществ и их метаболитов","Не представившим медицинского заключения об отсутствии медицинских противопоказаний к владению оружием (при этом представление отдельного медицинского заключения об отсутствии в организме человека наркотических средств, психотропных веществ и их метаболитов не требуется)","Не представившим медицинского заключения об отсутствии медицинских противопоказаний к управлению транспортным средством (вместе с медицинским заключением об отсутствии в организме человека наркотических средств, психотропных веществ и их метаболитов)"],
+[6,1,1,"Обязаны ли граждане (за исключением специально уполномоченных лиц), являющиеся пассажирами воздушного судна гражданской авиации, сдавать имеющееся у них оружие уполномоченным лицам для временного хранения на период полета?","Обязаны во всех случаях","Обязаны, кроме случаев, когда оружие находится в его багаже","Не обязаны"],
+[7,1,1,"При необходимой обороне субъектом посягательства, отражаемого обороняющимся, является:","Человек (физическое лицо).","Стихия (силы природы).","Источник повышенной опасности (оружие, автомобиль и пр.)."],
+[8,1,2,"Могут ли действия граждан по защите других лиц расцениваться как действия в состоянии необходимой обороны:","Не могут ни при каких условиях.","Могут, если соблюдены условия необходимой обороны, предусмотренные законом.","Могут только в случаях непосредственной угрозы жизни"],
+[9,1,3,"Допускается ли причинение вреда третьим лицам в состоянии необходимой обороны?","Да, при групповом нападении","Да, при вооруженном нападении","Нет"],
+[10,1,2,"В соответствии с Гражданским кодексом РФ вред, причиненный в состоянии крайней необходимости:","Не подлежит возмещению","Подлежит возмещению по решению суда","Во всех случаях подлежит возмещению в полном объеме лицом, причинившим вред"],
+[11,1,2,"Причинение вреда, менее значительного, чем предотвращенный вред, является обязательным условием правомерности действий:","В состоянии необходимой обороны","В состоянии крайней необходимости","Как в состоянии необходимой обороны, так и в состоянии крайней необходимости"],
+[12,1,1,"Небрежное хранение огнестрельного оружия, создавшее условия для его использования другим лицом, если это повлекло смерть человека или иные тяжкие последствия, влечет:","Уголовную ответственность","Административную ответственность","Уголовную и административную ответственность"],
+[13,1,2,"Нарушение гражданами правил ношения оружия и патронов к нему влечет:","Уголовную ответственность","Административную ответственность","Уголовную и административную ответственность"],
+[14,1,3,"В соответствии с Федеральным законом «Об оружии» охотничье пневматическое оружие может иметь дульную энергию:","Не более 3 Дж","Не более 7,5 Дж","Не более 25 Дж"],
+[15,1,2,"В какой срок и куда в соответствии с Федеральным законом «Об оружии» владелец оружия обязан сообщить о каждом случае его применения?","Незамедлительно, но не позднее суток, прокурору и в органы здравоохранения, по месту применения оружия","Незамедлительно, но не позднее суток, в орган внутренних дел и территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, по месту применения оружия","Незамедлительно, но не позднее 6 часов, прокурору, в органы здравоохранения, в орган внутренних дел и территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, по месту применения оружия"],
+[16,1,1,"Обязан ли гражданин незамедлительно информировать орган внутренних дел и территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, в случае, если он применил оружие для производства предупредительного выстрела?","Обязан информировать орган внутренних дел и территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, по месту применения оружия","Не обязан, поскольку нет пострадавших","Обязан информировать орган внутренних дел и территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, по месту регистрации оружия"],
+[17,1,1,"Правилами оборота гражданского и служебного оружия на территории Российской Федерации предусмотрено, что досылание патрона в патронник разрешается:","Только при необходимости применения оружия либо для защиты жизни, здоровья и собственности в состоянии необходимой обороны или крайней необходимости","При необходимости применения оружия, а также в любых других опасных ситуациях","При необходимости применения оружия, а также при охране денежных средств и ценных грузов"],
+[18,1,3,"На основании Правил оборота гражданского и служебного оружия на территории Российской Федерации граждане, осуществляющие ношение оружия, должны иметь при себе:","Документы, удостоверяющие их личность, паспорт на оружие от предприятия-производителя","Выданное Федеральной службой войск национальной гвардии Российской Федерации или ее территориальным органом лицензию либо разрешение на хранение и ношение имеющегося у них оружия, медицинские справки формы 002-О/у и 003-О/у","Документы, удостоверяющие их личность, а также выданные Федеральной службой войск национальной гвардии Российской Федерации или ее территориальным органом лицензию либо разрешение на хранение и ношение имеющегося у них оружия"],
+[19,1,1,"В соответствии с Федеральным законом «Об оружии» к основным частям огнестрельного оружия относятся:","Ствол, затвор, барабан, рамка, ствольная коробка","Ствол, затворная рама, крышка ствольной коробки, приклад, рукоятка","Ствол, магазин, барабан, рамка, ствольная коробка, патрон"],
+[20,1,2,"В соответствии с Федеральным законом «Об оружии» к огнестрельному оружию ограниченного поражения относится:","Короткоствольное оружие и длинноствольное оружие, предназначенные для механического поражения живой цели на расстоянии метаемым снаряжением патрона травматического действия, получающим направленное движение за счет энергии порохового или иного заряда, и не предназначенные для причинения смерти человеку","Короткоствольное оружие и бесствольное оружие, предназначенные для механического поражения живой цели на расстоянии метаемым снаряжением патрона травматического действия, получающим направленное движение за счет энергии порохового или иного заряда, и не предназначенные для причинения смерти человеку","Короткоствольное, длинноствольное оружие и бесствольное оружие, предназначенные для механического поражения живой цели на расстоянии метаемым снаряжением патрона травматического действия, получающим направленное движение за счет энергии порохового или иного заряда, и не предназначенные для причинения смерти человеку"],
+[21,1,3,"В соответствии с Федеральным законом «Об оружии» к газовому оружию относится:","Оружие, предназначенное для поражения цели на расстоянии снарядом, получающим направленное движение за счет энергии сжатого, сжиженного или отвержденного газа","Оружие, предназначенное для временного поражения живой цели путем применения слезоточивых, раздражающих веществ, или патронов травматического действия","Оружие, предназначенное для временного химического поражения живой цели путем применения слезоточивых или раздражающих веществ"],
+[22,1,2,"В соответствии с Гражданским кодексом Российской Федерации вред, причиненный в состоянии необходимой обороны:","Подлежит возмещению, только если превышает установленный законом минимальный размер оплаты труда","Не подлежит возмещению, если при этом не были превышены пределы необходимой обороны","В любом случае подлежит возмещению лицом, причинившим вред"],
+[23,1,1,"В соответствии с Федеральным законом «Об оружии» общее количество приобретенного гражданином Российской Федерации огнестрельного оружия ограниченного поражения (за исключением случаев, если указанное оружие является объектом коллекционирования) не должно превышать:","Две единицы","Три единицы","Пять единиц"],
+[24,1,3,"В соответствии с Федеральным законом «Об оружии» гражданам Российской Федерации не разрешается иметь в собственности свыше следующего общего количества огнестрельного гладкоствольного длинноствольного оружия, охотничьего огнестрельного гладкоствольного длинноствольного оружия и охотничьего огнестрельного длинноствольного оружия с нарезным стволом (если оно не является предметом коллекционирования):","Две единицы","Пятнадцати единиц","Десять единиц"],
+[25,1,3,"В соответствии с Федеральным законом «Об оружии» по лицензии на приобретение газовых пистолетов, револьверов допускается их регистрация в количестве:","Не более двух единиц","Не более трех единиц","Не более пяти единиц"],
+[26,1,3,"В соответствии с Федеральным законом «Об оружии» лицензия на приобретение оружия не выдается гражданам Российской Федерации, повторно привлеченным в течение года к административной ответственности:","За совершение любого административного правонарушения","За совершение административного правонарушения, посягающего на институты государственной власти, либо административного правонарушения, посягающего на права граждан","За совершение административного правонарушения, посягающего на общественный порядок и общественную безопасность или установленный порядок управления, административного правонарушения, связанного с нарушением правил охоты, либо административного правонарушения в области оборота наркотических средств, психотропных веществ, их аналогов или прекурсоров, растений, содержащих наркотические средства или психотропные вещества либо их прекурсоры, или их частей, содержащих наркотические средства или психотропные вещества либо их прекурсоры, за исключением административных правонарушений, связанных с потреблением наркотических средств или психотропных веществ без назначения врача либо новых потенциально опасных психоактивных веществ, - до окончания срока, в течение которого лицо считается подвергнутым административному наказанию"],
+[27,1,3,"За стрельбу из оружия в отведенных для этого местах с нарушением установленных правил:","Не предусмотрено административного наказания","Предусмотрено предупреждение или наложение административного штрафа","Предусмотрено наложение административного штрафа с конфискацией оружия и патронов к нему или без таковой"],
+[28,1,1,"Федеральным законом «Об оружии» предусмотрена регистрация приобретенного огнестрельного оружия, огнестрельного оружия ограниченного поражения и охотничьего пневматического оружия с дульной энергией свыше 7,5 Дж, охотничьего метательного стрелкового оружия, а также газовых пистолетов и револьверов, сигнального оружия, холодного клинкового оружия, предназначенного для ношения с национальными костюмами народов Российской Федерации или казачьей формой в территориальном органе федерального органа исполнительной власти, уполномоченного в сфере оборота оружия или его территориальном органе по месту жительства:","В двухнедельный срок","В месячный срок","В трехмесячный срок"],
+[29,1,2,"В соответствии с Уголовным кодексом РФ к уголовно наказуемым деяниям относится:","Причинение тяжкого вреда здоровью по неосторожности, совершенное при превышении пределов необходимой обороны","Умышленное причинение тяжкого вреда здоровью, совершенное при превышении пределов необходимой обороны","Умышленное причинение любого вреда здоровью, совершенное при превышении пределов необходимой обороны"],
+[30,1,1,"Заведомое оставление без помощи лица, находящегося в опасном для жизни или здоровья состоянии и лишенного возможности принять меры к самосохранению (в том случае, если виновный имел возможность оказать помощь этому лицу и сам поставил его в опасное для жизни или здоровья состояние) является:","Преступлением","Административным правонарушением","Деянием, ответственность за которое не предусмотрена"],
+[31,1,2,"Нарушение гражданином установленных сроков регистрации приобретенного по лицензиям федерального органа исполнительной власти, осуществляющего функции в сфере деятельности войск национальной гвардии Российской Федерации, или его территориального органа оружия, а равно установленных сроков продления (перерегистрации) разрешений (открытых лицензий) на его хранение и ношение или сроков постановки оружия на учет в федеральном органе исполнительной власти, осуществляющем функции в сфере деятельности войск национальной гвардии Российской Федерации, или его территориальном органе при изменении гражданином постоянного места жительства, влечет:","Уголовную ответственность","Административную ответственность","Гражданско-правовую ответственность"],
+[32,1,3,"За стрельбу из оружия в населенных пунктах или в других не отведенных для этого местах:","Не предусмотрено административного наказания","Предусмотрено предупреждение или наложение административного штрафа","Предусмотрено наложение административного штрафа с конфискацией оружия и патронов к нему либо лишение права на приобретение и хранение или хранение и ношение оружия на срок от полутора до трех лет с конфискацией оружия и патронов к нему"],
+[33,1,1,"Результаты прохождения проверки знания правил безопасного обращения с оружием и наличия навыков безопасного обращения с оружием оформляются:","Актом прохождения проверки","Свидетельством о прохождении проверки","Экзаменационным листом"],
+[34,1,3,"Лицензия на приобретение оружия и разрешение на хранение или хранение и ношение оружия аннулируются:","Органами местного самоуправления.","Органами, уполномоченные на выдачу охотничьих билетов.","Органами, выдавшими эти лицензию и (или) разрешение."],
+[35,1,3,"Проверка знания правил безопасного обращения с оружием и наличия навыков безопасного обращения с оружием владельцами огнестрельного оружия ограниченного поражения, газовых пистолетов, револьверов, гражданского огнестрельного гладкоствольного длинноствольного оружия самообороны проводится:","Не реже одного раза в год","Не реже одного раза в три года","Не реже одного раза в пять лет"],
+[36,1,1,"В соответствии с Федеральным законом «Об оружии» гражданин Российской Федерации вправе обратиться в федеральный орган исполнительной власти, уполномоченный в сфере оборота оружия, или его территориальный орган по месту жительства с заявлением о выдаче нового разрешения взамен ранее выданного:","В любое время, но не позднее чем за один месяц до дня окончания срока его действия.","Не ранее чем за шесть месяцев и не позднее чем за один месяц до дня окончания срока его действия.","Не ранее чем за шесть месяцев и не позднее чем за два месяца до дня окончания срока его действия."],
+[37,1,2,"При выдаче новых лицензий и разрешений ранее полученные, с истекшим сроком действия:","Остаются у владельца оружия","Подлежат сдаче в территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия.","Подлежат сдаче в территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия, только если выдавались на огнестрельное оружие"],
+[38,1,1,"В соответствии с Федеральным законом «Об оружии» дульная энергия при выстреле из гражданского огнестрельного гладкоствольного длинноствольного оружия патронами травматического действия:","Не должна превышать 150 Дж","Не должна превышать 91 Дж","Не должна превышать 80 Дж"],
+[39,1,2,"В соответствии с Федеральным законом «Об оружии» дульная энергия при выстреле из гражданского огнестрельного оружия ограниченного поражения патронами травматического действия:","Не должна превышать 150 Дж","Не должна превышать 91 Дж","Не должна превышать 80 Дж"],
+[40,1,1,"Возраст, по достижении которого граждане Российской Федерации имеют право на приобретение охотничьего огнестрельного гладкоствольного длинноствольного оружия:","Может быть снижен не более чем на два года по решению законодательного (представительного) органа государственной власти субъекта Российской Федерации","Может быть снижен не более чем на один год по решению законодательного (представительного) органа государственной власти субъекта Российской Федерации","Не может быть снижен"],
+[41,1,3,"В соответствии с Федеральным законом «Об оружии» огнестрельное оружие ограниченного поражения иностранного производства, его основные части, а также патроны травматического действия, изготовленные за пределами территории Российской Федерации:","Подлежат ввозу в Российскую Федерацию, если их технические характеристики соответствуют аналогичным моделям отечественного производства.","Подлежат ввозу в Российскую Федерацию.","Не подлежат ввозу в Российскую Федерацию."],
+[42,1,2,"В случае изменения места жительства гражданин Российской Федерации обязан обратиться с заявлением о постановке на учет принадлежащего ему оружия:","В территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия по прежнему месту жительства в двухнедельный срок со дня регистрации.","В соответствующий территориальный орган федерального органа исполнительной власти, уполномоченного в сфере оборота оружия по новому месту жительства в двухнедельный срок со дня регистрации.","В территориальные органы федерального органа исполнительной власти, уполномоченного в сфере оборота оружия по прежнему, а также по новому месту жительства, в течении месяца со дня регистрации."],
+[43,1,3,"Оружие, находящееся на законных основаниях на праве личной собственности у гражданина Российской Федерации может быть продано другому гражданину, имеющему лицензию на приобретение оружия, его коллекционирование или экспонирование:","После перерегистрации оружия в федеральном органе исполнительной власти, уполномоченном в сфере оборота оружия, или его территориальном органе по месту жительства лица, приобретающего оружие","После внесения записи о перерегистрации оружия в лицензию нового владельца самим гражданином, продающим оружие","После перерегистрации оружия в федеральном органе исполнительной власти, уполномоченном в сфере оборота оружия, или его территориальном органе по месту учета указанного оружия"],
+[44,1,1,"Согласно Правил оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации, принадлежащие гражданам Российской Федерации оружие и патроны по месту их проживания:","Должны храниться с соблюдением условий, обеспечивающих их сохранность, безопасность хранения и исключающих доступ к ним посторонних лиц, в запирающихся на замок (замки) сейфах, сейфовых шкафах или металлических шкафах для хранения оружия, ящиках из высокопрочных материалов либо в деревянных ящиках, обитых железом","Должны храниться с соблюдением условий, обеспечивающих их сохранность, безопасность хранения и исключающих доступ к ним посторонних лиц, в любых запирающихся на замок ящиках","Хранятся в произвольном порядке"],
+[45,1,1,"Согласно Правил оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации, хранение оружия и патронов гражданами Российской Федерации в местах временного пребывания:","Должно осуществляться с соблюдением условий, исключающих доступ к оружию посторонних лиц","Должно осуществляться с соблюдением условий, исключающих доступ к оружию посторонних лиц и только в запирающихся на замок (замки) сейфах или металлических шкафах для хранения оружия, ящиках из высокопрочных материалов либо в деревянных ящиках, обитых железом","Осуществляется в произвольном порядке"],
+[46,1,1,"Хранение оружия и патронов, принадлежащего гражданам Российской Федерации, являющихся членами спортивных стрелковых обществ и клубов на спортивных стрелково-стендовых объектах по месту проведения тренировочных стрельб и соревнований:","Допускается","Не допускается","Допускается только при условии, что названные граждане являются спортсменами высокого класса"],
+[47,1,1,"К условиям, при которых граждане Российской Федерации, которые имеют охотничий билет, имеют право получать лицензию на приобретение охотничьего огнестрельного длинноствольного оружия с нарезным стволом, относятся, среди прочих, следующие:","- занимаются профессиональной деятельностью, связанной с охотой; - владеют непрерывно не менее трех лет охотничьим огнестрельным длинноствольным оружием на основании разрешения на его хранение и ношение, выданного федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом","- занимаются профессиональной деятельностью, связанной с охотой; - владеют непрерывно не менее пяти лет охотничьим огнестрельным длинноствольным оружием на основании разрешения на его хранение и ношение, выданного федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом; - владеют охотничьим огнестрельным длинноствольным оружием с нарезным стволом на основании разрешения на его хранение и ношение, выданного федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом, которое было приобретено на основании лицензии на приобретение такого оружия","- занимаются правоохранительной деятельностью; - владеют непрерывно не менее пяти лет охотничьим огнестрельным длинноствольным оружием на основании разрешения на его хранение и ношение, выданного федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом; - владеют охотничьим огнестрельным длинноствольным оружием с нарезным стволом на основании разрешения на его хранение и ношение, выданного федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом, которое было приобретено на основании лицензии на приобретение такого оружия"],
+[48,1,3,"Согласно Правил оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации, транспортирование принадлежащего гражданам оружия:","Осуществляется в произвольном порядке","Осуществляется в кобурах, чехлах; при их отсутствии - в ингибиторной бумаге","Осуществляется в чехлах, кобурах или специальных футлярах, а также в специальной упаковке производителя оружия"],
+[49,1,2,"Согласно Правил оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации (в части, регулирующей транспортирование принадлежащего гражданам оружия):","Оружие при транспортировании должно быть разряженным только в случае транспортирования в специальной упаковке производителя оружия","Оружие при транспортировании должно находиться в разряженном состоянии отдельно от патронов","Оружие при транспортировании может находиться как в разряженном, так и в заряженном состоянии (по усмотрению владельца)"],
+[50,1,3,"При получении заявления о продлении срока действия разрешений на хранение (либо хранение и ношение) оружия, дата и время проверки уполномоченными сотрудниками обеспечения условий хранения (сохранности) оружия и патронов определяется в следующем порядке:","В течение 2 рабочих дней со дня регистрации заявления сотрудник по согласованию с вышестоящим руководством определяет дату и время проверки, о которых заявитель оповещается по его контактным телефонам либо по электронной почте","В течение 2 рабочих дней со дня регистрации заявления сотрудник самостоятельно определяет дату и время проверки, о которых заявитель оповещается по его контактным телефонам либо по электронной почте","В течение 2 рабочих дней со дня регистрации заявления сотрудником совместно с заявителем по контактным телефонам либо путем переписки по электронной почте определяются дата и время проверки"],
+[51,1,1,"Имеют ли право на необходимую оборону лица, имеющие возможность избежать общественно опасного посягательства или обратиться за помощью к другим лицам или органам власти?","Да, имеют","Нет, не имеют","Имеют, если посягательство сопряжено с насилием, опасным для жизни обороняющегося"],
+[52,1,1,"Правилами оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации установлен следующий порядок ношения огнестрельного короткоствольного оружия:","В кобуре, со снаряженным магазином или барабаном, поставленным на предохранитель (при наличии)","В кобуре, с патроном в патроннике, со взведенным курком","В кобуре, с патроном в патроннике, поставленным на предохранитель (при наличии)"],
+[53,1,3,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации ношение гражданами в целях самообороны огнестрельного длинноствольного оружия, холодного оружия и метательного стрелкового оружия:","Разрешается на территории того субъекта Российской Федерации, в котором проживает владелец указанного оружия","Разрешается на всей территории Российской Федерации","Запрещается, за исключением случаев перевозки или транспортирования указанного оружия"],
+[54,1,2,"В соответствии с Федеральным законом «Об оружии» гражданское огнестрельное оружие (за исключением спортивного оружия) должно иметь емкость магазина (барабана):","Не более 8 патронов","Не более 10 патронов","Не более 12 патронов"],
+[55,1,1,"В соответствии с Федеральным законом «Об оружии» гражданское огнестрельное оружие:","Должно исключать ведение огня очередями","Может вести огонь очередями","Может вести огонь очередями только в случае, когда оно является охотничьим"],
+[56,1,1,"Согласно Правил оборота гражданского и служебного оружия и патронов к нему на территории Российской Федерации, граждане Российской Федерации осуществляют ношение и использование оружия (с учетом ограничений, установленных Федеральным законом «Об оружии»):","Во время охоты, проведения спортивных мероприятий, тренировочных и учебных стрельб, а также в целях самообороны","Во время охоты, проведения спортивных мероприятий, тренировочных и учебных стрельб","Только во время охоты и в целях самообороны"],
+[57,1,3,"В соответствии с Федеральным законом «Об оружии» осмотр врачом-психиатром и врачом-психиатром-наркологом при проведении медицинского освидетельствования на наличие медицинских противопоказаний к владению оружием и химико-токсикологические исследования наличия в организме человека наркотических средств, психотропных веществ и их метаболитов осуществляется:","В любых медицинских организациях","В медицинских организациях государственной или муниципальной системы здравоохранения только по месту жительства гражданина Российской Федерации","В медицинских организациях государственной или муниципальной системы здравоохранения по месту жительства (пребывания) гражданина Российской Федерации"],
+[58,1,2,"В соответствии с Федеральным законом «Об оружии» запрещается ношение огнестрельного оружия:","На стрелковых объектах","В состоянии опьянения","За пределами субъекта Российской Федерации, где зарегистрировано огнестрельное оружие"],
+[59,1,3,"В соответствии с Федеральным законом «Об оружии» запрещается ношение гражданами огнестрельного оружия ограниченного поражения:","На стрелковых объектах.","Во время нахождения в организациях, предназначенных для развлечения и досуга (независимо от времени их работы и факта реализации в них алкогольной продукции), за исключением случаев ношения такого оружия лицами, осуществляющими в соответствии с законодательством Российской Федерации охрану указанных организаций.","Во время нахождения в организациях, предназначенных для развлечения и досуга, осуществляющих работу в ночное время и реализующих алкогольную продукцию, за исключением случаев ношения такого оружия лицами, осуществляющими в соответствии с законодательством Российской Федерации охрану указанных организаций"],
+[60,1,2,"В соответствии с Кодексом РФ об административных правонарушениях нарушение правил охоты влечет для граждан:","Наложение административного штрафа с конфискацией орудий охоты или без таковой или административный арест до 15 суток","Наложение административного штрафа с конфискацией орудий охоты или без таковой или лишение права осуществлять охоту на установленный законом срок","Только аннулирование (изъятие) охотничьего билета"],
+[61,1,1,"В соответствии с Федеральным законом «Об оружии» гражданское огнестрельное оружие ограниченного поражения (пистолет, револьвер, огнестрельное бесствольное устройство отечественного производства) может использоваться:","С патронами травматического действия, патронами газового действия и патронами светозвукового действия","С патронами травматического действия и патронами светозвукового действия","Только с патронами травматического действия"],
+[62,1,2,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещен оборот в качестве гражданского оружия:","Огнестрельного длинноствольного оружия, имеющего длину цельного ствола от переднего торца направляющей части канала ствола до казенного среза ствола менее 500 мм; огнестрельного длинноствольного оружия, имеющего общую длину оружия менее 800 мм, а также имеющего конструкцию, которая позволяет сделать его длину менее 800 мм и при этом не теряется возможность производства выстрела","Огнестрельного длинноствольного оружия, имеющего длину цельного ствола от переднего торца направляющей части канала ствола до казенного среза ствола менее 300 мм; огнестрельного длинноствольного оружия, имеющего общую длину оружия менее 700 мм, а также имеющего конструкцию, которая позволяет сделать его длину менее 700 мм и при этом не теряется возможность производства выстрела","Огнестрельного длинноствольного оружия, имеющего длину цельного ствола от переднего торца направляющей части канала ствола до казенного среза ствола менее 400 мм; огнестрельного длинноствольного оружия, имеющего общую длину оружия менее 750 мм, а также имеющего конструкцию, которая позволяет сделать его длину менее 750 мм и при этом не теряется возможность производства выстрела"],
+[63,1,2,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается:","Перевозка оружия","Пересылка оружия","Транспортирование оружия"],
+[64,1,3,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается оборот в качестве гражданского оружия:","Огнестрельного оружия, которое имеет камуфлированную раскраску","Огнестрельного оружия, содержащего комплектующие детали либо элементы, по виду сходные с комплектующими деталями либо элементами боевого оружия","Огнестрельного оружия, которое имеет форму, имитирующую другие предметы"],
+[65,1,3,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается установка на гражданском оружии:","Коллиматорных прицелов и лазерных целеуказателей, а также их продажа при отсутствии соответствующей лицензии на торговлю оружием","Приспособлений для бесшумной стрельбы и прицелов (прицельных комплексов) ночного видения, в том числе прицелов для охоты, порядок использования которых устанавливается Правительством Российской Федерации, а также их продажа","Приспособлений для бесшумной стрельбы и прицелов (прицельных комплексов) ночного видения, за исключением прицелов для охоты, порядок использования которых устанавливается Правительством Российской Федерации, а также их продажа"],
+[66,1,1,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается оборот в качестве гражданского оружия:","Патронов с пулями, или пуль, или метаемых снарядов к метательному стрелковому оружию бронебойного, зажигательного, разрывного или трассирующего действия, а также патронов с дробовыми снарядами для газовых пистолетов и револьверов","Патронов с пулями, или пуль, или метаемых снарядов к метательному стрелковому оружию бронебойного, зажигательного, разрывного или трассирующего действия, кроме используемых для охоты, а также патронов с дробовыми снарядами для газовых пистолетов и револьверов","Патронов светозвукового и травматического действия, а также патронов с дробовыми снарядами для охотничьего оружия"],
+[67,1,1,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается оборот в качестве гражданского оружия:","Газового оружия, снаряженного нервно-паралитическими, отравляющими, а также другими веществами, не разрешенными к применению федеральным органом исполнительной власти, осуществляющим функции по выработке государственной политики и нормативно-правовому регулированию в сфере здравоохранения","Газового оружия, снаряженного слезоточивыми или раздражающими веществами, разрешенными к применению федеральным органом исполнительной власти, осуществляющим функции по выработке государственной политики и нормативно-правовому регулированию в сфере здравоохранения","Газовых пистолетов и револьверов с емкостью магазина (барабана) более 8 патронов."],
+[68,1,2,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации запрещается:","Продажа или передача патронов к гражданскому оружию лицам, не владеющим на законном основании таким гражданским оружием, за исключением передачи патронов лицам, участвующим в совместной охоте с владельцем оружия и патронов","Продажа или передача патронов к гражданскому оружию лицам, не владеющим на законном основании таким гражданским оружием, за исключением передачи патронов лицам, занимающимся в спортивных организациях видами спорта, связанными с использованием огнестрельного оружия, или проходящим стрелковую подготовку в образовательных организациях","Продажа или передача патронов к гражданскому оружию лицам, не владеющим на законном основании таким гражданским оружием, за исключением случаев передачи патронов лицам, являющимся членами семьи и проживающим совместно с владельцем оружия и патронов"],
+[69,1,1,"В соответствии с Федеральным законом «Об оружии» на территории Российской Федерации не запрещается:","Продажа или передача инициирующих и воспламеняющих веществ и материалов (пороха, капсюлей) для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию гражданам, имеющим разрешения на хранение и ношение такого оружия","Продажа или передача инициирующих и воспламеняющих веществ и материалов (пороха, капсюлей) для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию гражданам, не имеющим разрешения на хранение и ношение такого оружия, но участвующим в совместной охоте с лицами, имеющими соответствующие разрешения","Продажа или передача инициирующих и воспламеняющих веществ и материалов (пороха, капсюлей) для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию гражданам, не имеющим разрешения на хранение и ношение такого оружия, но проживающим совместно с лицами, имеющими соответствующие разрешения"],
+[70,1,2,"Правилами охоты установлено, что проверка боя охотничьего оружия и приведение его к нормальному бою (далее - пристрелка) должна производиться (вопрос не используется при проверке на продление разрешений):","Только на специально оборудованных стрельбищах или площадках","На специально оборудованных стрельбищах или площадках, либо в охотничьих угодьях только в период охоты при наличии у охотника документов на право осуществления охоты","На специально оборудованных стрельбищах или площадках, либо в охотничьих угодьях (независимо от того, происходит ли это в период охоты)"],
+[71,1,3,"Правилами охоты установлено, что при заряжании или разряжании охотничьего оружия его следует направлять стволами:","Только вверх","Только в землю","Только вверх или в землю, отвернувшись в сторону от других физических лиц"],
+[72,1,1,"Правилами охоты установлено, что в целях обеспечения безопасности при осуществлении охоты запрещается (вопрос не используется при проверке на продление разрешений):","Стрелять «на шум», «на шорох», по неясно видимой цели","Стрелять, если цель находится на возвышенности","Стрелять в болотистой местности"],
+[73,1,2,"Правилами охоты установлено, что в целях обеспечения безопасности при осуществлении охоты запрещается осуществлять добычу охотничьих животных с применением охотничьего оружия ближе (вопрос не используется при проверке на продление разрешений):","100 метров от жилого дома, жилого строения","200 метров от жилого дома, жилого строения","300 метров от жилого дома, жилого строения"],
+[74,1,3,"Правилами охоты установлено, что в целях обеспечения безопасности при осуществлении охоты запрещается (вопрос не используется при проверке на продление разрешений):","Стрелять по пернатой дичи, находящейся в стае","Стрелять по пернатой дичи, сидящей на нижних ветках деревьев","Стрелять по пернатой дичи, сидящей на проводах и опорах (столбах) линий электропередач"],
+[75,1,3,"Правилами охоты установлено, что в целях обеспечения безопасности при осуществлении охоты запрещается стрелять вдоль линии стрелков, когда снаряд может пройти ближе (вопрос не используется при проверке на продление разрешений):","25 метров от соседнего стрелка","20 метров от соседнего стрелка","15 метров от соседнего стрелка"],
+[76,1,2,"Правилами охоты установлено, что в целях обеспечения безопасности при осуществлении охоты запрещается организовывать загон охотничьих животных (вопрос не используется при проверке на продление разрешений):","При котором животных загоняют в направлении к реке или иному водоему","При котором охотники движутся внутрь загона, окружая оказавшихся в загоне животных","При котором загонщики используют какие-либо дополнительные средства производства шума, помимо собственного голоса"],
+[77,1,1,"Правилами охоты запрещается стрелять ниже 2,5 метров по взлетающей и летящей птице (вопрос не используется при проверке на продление разрешений):","При осуществлении охоты в зарослях, кустах и ограниченном обзоре местности","При любом осуществлении охоты, независимо от ее условий","При использовании полуавтоматического оружия"],
+[78,1,1,"Правилами охоты установлено, что при осуществлении охоты запрещается применение охотничьего огнестрельного гладкоствольного оружия для охоты на пернатую дичь (вопрос не используется при проверке на продление разрешений):","Снаряженного дробью (картечью) крупнее пяти миллиметров и пулями","Снаряженного дробью (картечью) крупнее четырех миллиметров и пулями","Снаряженного дробью (картечью) крупнее трех миллиметров и пулями"],
+[79,1,3,"Организациям, осуществляющим торговлю оружием и патронами к нему, не запрещается продавать инициирующие и воспламеняющие вещества и материалы (порох, капсюли) для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию либо для заряжания оружия, имеющего культурную ценность, копий старинного (антикварного) огнестрельного оружия и реплик старинного (антикварного) огнестрельного оружия (вопрос не используется при проверке на продление разрешений):","Любым гражданам, достигшим возраста 18 лет","Гражданам, проходящим службу в государственных военизированных организациях и имеющим воинские звания либо специальные звания или классные чины юстиции (независимо от наличия у них разрешения на хранение и ношение гражданского огнестрельного длинноствольного оружия)","Гражданам, представившим разрешение на хранение и ношение гражданского огнестрельного длинноствольного оружия."],
+[80,1,2,"Не подлежат продаже вещества и материалы для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию (вопрос не используется при проверке на продление разрешений):","Произведенные за пределами Российской Федерации.","Упаковка которых не содержит сведений о правилах их безопасного использования для самостоятельного снаряжения патронов к гражданскому огнестрельному длинноствольному оружию.","Вес упаковки которых превышает 100 гр."],
+[81,1,1,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, право на приобретение гражданского огнестрельного оружия ограниченного поражения, охотничьего оружия, огнестрельного гладкоствольного длинноствольного оружия самообороны имеют:","Граждане Российской Федерации, достигшие возраста 21 года (возможность более раннего приобретения допускается законом только для отдельных категорий граждан)","Все граждане Российской Федерации, достигшие возраста 20 лет","Все граждане Российской Федерации, достигшие возраста 18 лет"],
+[82,1,2,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, гражданам Российской Федерации, получившим лицензию на приобретение гражданского огнестрельного длинноствольного оружия:","До истечения первого года владения таким оружием не разрешается приобретать в целях самообороны или охоты огнестрельное гладкоствольное длинноствольное оружие, имеющее более двух стволов или магазин (барабан)","До истечения первых двух лет владения таким оружием не разрешается приобретать в целях самообороны или охоты огнестрельное гладкоствольное длинноствольное оружие, имеющее более двух стволов или магазин (барабан)","До истечения первых трех лет владения таким оружием не разрешается приобретать в целях самообороны или охоты огнестрельное гладкоствольное длинноствольное оружие, имеющее более двух стволов или магазин (барабан)"],
+[83,1,3,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, право на приобретение газового оружия, спортивного оружия, охотничьего огнестрельного гладкоствольного длинноствольного оружия и охотничьего огнестрельного длинноствольного оружия с нарезным стволом для занятий спортом, сигнального оружия, холодного клинкового оружия, предназначенного для ношения с национальными костюмами народов Российской Федерации или казачьей формой имеют:","Только граждане Российской Федерации, достигшие возраста 21 года","Только граждане Российской Федерации, достигшие возраста 20 лет","Граждане Российской Федерации, достигшие возраста 18 лет"],
+[84,1,2,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, гладкоствольное огнестрельное оружие определяется как:","Огнестрельное оружие, канал ствола которого имеет круглое сечение, цилиндрическую или коническую форму и гладкую (ровную) внутреннюю поверхность с длиной нарезной части не более 140 мм","Огнестрельное оружие, канал ствола которого имеет круглое сечение, цилиндрическую или коническую форму и гладкую (ровную) внутреннюю поверхность на всем его протяжении","Огнестрельное оружие, канал ствола которого имеет круглое сечение, цилиндрическую или коническую форму и гладкую (ровную) внутреннюю поверхность (с длиной нарезной части не более 140 мм – только для охотничьего огнестрельного гладкоствольного длинноствольного оружия)"],
+[85,1,3,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, переделка оружия - замена или изменение формы и (или) размеров основных частей огнестрельного оружия либо деталей ударного и спускового механизмов оружия, замена или изменение частей списанного оружия, пневматического оружия, сигнального оружия, газового оружия или метательного стрелкового оружия:","Которые повлекли изменение технических характеристик оружия, учитываемых при сертификации оружия (обязательном подтверждении соответствия); при этом факт уничтожения или изменения маркировочных обозначений, номера и (или) клейма оружия понятием о переделке оружия не охватывается","Которые повлекли уничтожение или изменение маркировочных обозначений, номера и (или) клейма оружия; при этом факт изменения технических характеристик оружия, учитываемых при сертификации оружия (обязательном подтверждении соответствия) понятием о переделке оружия не охватывается","Которые повлекли изменение технических характеристик оружия, учитываемых при сертификации оружия (обязательном подтверждении соответствия), уничтожение или изменение маркировочных обозначений, номера и (или) клейма оружия"],
+[86,1,2,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, собственник списанного оружия обязан уведомить федеральный орган исполнительной власти, уполномоченный в сфере оборота оружия, или его территориальный орган:","В течение десяти дней со дня приобретения этого оружия для его регистрации","В двухнедельный срок со дня приобретения этого оружия для его регистрации","В месячный срок со дня приобретения этого оружия для его регистрации"],
+[87,1,1,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, лицензия на приобретение оружия не выдается гражданам Российской Федерации:","Два и более раза осужденным за совершение преступления","Хотя бы один раз осужденным за совершение любого преступления","Когда-либо ранее находившимся под следствием по уголовному делу (независимо от результата рассмотрения дела)"],
+[88,1,2,"В соответствии с положениями Федерального закона «Об оружии», лицензия на приобретение оружия не выдается гражданам Российской Федерации:","Имеющим неснятую или непогашенную судимость за любое преступление, в том числе совершенное по неосторожности","Имеющим неснятую или непогашенную судимость за умышленное преступление, а также подозреваемым или обвиняемым в совершении умышленного преступления","Когда-либо ранее находившимся под следствием по уголовному делу (независимо от результата рассмотрения дела)"],
+[89,1,3,"В соответствии с положениями Федерального закона «Об оружии», не запрещена выдача лицензии на приобретение оружия гражданам Российской Федерации, имеющим снятую или погашенную судимость:","За умышленное преступление, связанное с незаконным оборотом оружия и патронов к нему, боеприпасов, взрывчатых веществ или взрывных устройств","За умышленное преступление, совершенное с применением насилия в отношении несовершеннолетнего (несовершеннолетней)","За умышленное преступление в сфере компьютерной информации, относящееся к преступлениям небольшой или средней тяжести"],
+[90,1,1,"В соответствии с положениями Федерального закона «Об оружии», не запрещена выдача лицензии на приобретение оружия гражданам Российской Федерации, имеющим снятую или погашенную судимость:","За преступление небольшой или средней тяжести, выразившееся в нарушении правил дорожного движения и эксплуатации транспортных средств","За преступление террористического характера и (или) экстремистской направленности, а также за преступление, совершенное в целях пропаганды, оправдания и поддержки терроризма","За тяжкое или особо тяжкое преступление, а также за умышленное преступление средней тяжести, совершенное с применением (использованием) оружия, предметов, используемых в качестве оружия, боеприпасов, взрывчатых веществ, взрывных или имитирующих их устройств, специально изготовленных технических средств, наркотических средств, психотропных, сильнодействующих, ядовитых и радиоактивных веществ, лекарственных и иных химико-фармакологических препаратов"],
+[91,1,1,"В соответствии с положениями Федерального закона «Об оружии», вступившими в силу с 29 июня 2022 года, лицензия на приобретение оружия не выдается гражданам Российской Федерации, привлеченным к административной ответственности за совершение административного правонарушения, предусматривающего административный арест в качестве одного из видов административного наказания, а также привлеченным к административной ответственности за потребление наркотических средств или психотропных веществ без назначения врача либо новых потенциально опасных психоактивных веществ, за управление транспортным средством в состоянии опьянения либо передачу управления транспортным средством лицу, находящемуся в состоянии опьянения, либо невыполнение водителем транспортного средства законного требования уполномоченного должностного лица о прохождении медицинского освидетельствования на состояние опьянения, либо невыполнение законного требования уполномоченного должностного лица о прохождении медицинского освидетельствования на состояние опьянения гражданином, в отношении которого имеются достаточные основания полагать, что он потребил наркотические средства или психотропные вещества без назначения врача либо новые потенциально опасные психоактивные вещества:","До истечения одного года со дня окончания срока, в течение которого лицо считается подвергнутым административному наказанию","До истечения шести месяцев со дня окончания срока, в течение которого лицо считается подвергнутым административному наказанию","До окончания срока, в течение которого лицо считается подвергнутым административному наказанию"],
+[92,1,3,"В соответствии с Федеральным законом «Об оружии» граждане Российской Федерации, имеющие охотничий билет и владевшие охотничьим огнестрельным длинноствольным оружием с нарезным стволом, которое было приобретено на основании лицензии на приобретение такого оружия или владевшие непрерывно не менее пяти лет охотничьим огнестрельным длинноствольным оружием, на основании соответствующих разрешений на его хранение и ношение, выданных федеральным органом исполнительной власти, уполномоченным в сфере оборота оружия, или его территориальным органом, имеют право получать лицензию на приобретение охотничьего огнестрельного длинноствольного оружия с нарезным стволом, если со дня истечения срока действия указанного разрешения или его аннулирования на основании добровольного отказа гражданина от указанного разрешения прошло:","Не более пяти лет","Не более трех лет","Не более одного года"],
+[93,1,2,"В соответствии с положениями Федерального закона «Об оружии», не запрещена выдача лицензии на приобретение оружия гражданам Российской Федерации:","Освобожденным судом от уголовной ответственности за совершение умышленного преступления с назначением судебного штрафа либо по основаниям, не дающим права на реабилитацию в соответствии с уголовно-процессуальным законодательством Российской Федерации, - до истечения двух лет со дня вступления в законную силу соответствующего решения суда","Освобожденным судом от уголовной ответственности за совершение умышленного преступления по основаниям, дающим право на реабилитацию в соответствии с уголовно-процессуальным законодательством Российской Федерации","В отношении которых по результатам проверки, проведенной органами внутренних дел и (или) органами федеральной службы безопасности, имеется заключение о наличии опасности нарушения прав и свобод граждан, угрозы государственной или общественной безопасности"],
+[94,2,2,"Линией прицеливания называется:","Линия, проходящая от центра ствола в точку прицеливания","Прямая линия, проходящая от глаза стрелка через середину прорези прицела (на уровне с ее краями) и вершину мушки в точку прицеливания","Линия, описываемая центром тяжести пули в полете"],
+[95,2,1,"Траекторией полета пули называется:","Кривая линия, описываемая центром тяжести пули в полете","Прямая линия, проходящая от глаза стрелка через середину прорези прицела (на уровне с ее краями) и вершину мушки в точку прицеливания","Прямая линия от центра ствола до точки попадания"],
+[96,2,3,"Прямым выстрелом называется:","Выстрел, при котором траектория полета пули поднимается над линией прицеливания выше цели не более, чем на одной трети своего протяжения","Выстрел, при котором ствол оружия и линия плеч стрелка составляют прямой угол","Выстрел, при котором траектория полета пули не поднимается над линией прицеливания выше цели на всем своем протяжении"],
+[97,2,3,"Каков порядок действий стрелка при проведении стрельб в тирах и на стрельбищах?","Стрелок самостоятельно выходит на линию огня, по команде «Заряжай» заряжает оружие и по команде «Огонь» ведет огонь","Стрелок по команде «На линию огня» выходит на огневой рубеж, самостоятельно заряжает, стреляет","Стрелок выходит, заряжает, стреляет, производит иные действия только по мере получения отдельных команд"],
+[98,2,1,"Какова предельная дальность полета пуль из огнестрельного гладкоствольного длинноствольного оружия 12 калибра?","1000 - 1500 метров","300 - 500 метров","100 - 300 метров"],
+[99,2,3,"В случае задержки при стрельбе из пистолета в тире необходимо:","Осторожно вынуть магазин из основания рукоятки, устранить причину задержки, продолжить выполнение упражнения","Поставить оружие на предохранитель, вынуть магазин из основания рукоятки, сдать оружие руководителю стрельб (инструктору)","Не производить никаких действий с оружием и удерживая его в направлении мишени, доложить руководителю стрельб (инструктору) о задержке и действовать по его команде"],
+[100,2,1,"Как следует производить перезарядку огнестрельного гладкоствольного длинноствольного оружия с помповым механизмом?","Быстрым движением цевья назад, и не задерживая в заднем положении, быстрым вперед","Медленно назад и быстро вперед","Быстро назад и медленно вперед"],
+[101,2,1,"Безопасное использование оружия предполагает в период непосредственного применения:","Держать указательный палец вдоль спусковой скобы, переставляя его на спусковой крючок только перед выстрелом","Держать указательный палец всегда на спусковом крючке","Удерживая оружие двумя руками, всегда держать указательные пальцы (один на другом) на спусковом крючке"],
+[102,2,3,"Безопасное использование оружия предполагает в период непосредственного применения:","Ни при каких обстоятельствах не ставить оружие на предохранитель","Не ставить оружие на предохранитель после досылания патрона в патронник, даже если оружие не применяется сразу после досылания патрона","Ставить оружие на предохранитель после досылания патрона в патронник, если оружие не применяется сразу после досылания патрона"],
+[103,2,2,"Безопасное использование оружия предполагает в период непосредственного применения:","При досылании патрона в патронник не отвлекаться на контроль направления ствола оружия","Осуществлять обязательный контроль направления ствола оружия при досылании патрона в патронник для исключения возможного вреда самому владельцу оружия, посторонним лицам и имуществу","Осуществлять контроль направления ствола оружия при досылании патрона в патронник только в ситуациях близости несовершеннолетних или ценного имущества"],
+[104,2,2,"Безопасное использование оружия предполагает в период непосредственного применения:","Не отвлекаться на расчет траектории выстрела (в части исключения вреда посторонним лицам и/или вреда их имуществу)","Обеспечивать траекторию выстрела, исключающую причинение вреда посторонним лицам, а по возможности и их имуществу","Рассчитывать траекторию выстрела только в местах массового скопления людей"],
+[105,2,2,"Безопасное использование оружия при его ношении предполагает передачу оружия лицу, уполномоченному на его проверку:","С патроном в патроннике и присоединенным магазином","С отсоединенным магазином и после проверки факта отсутствия патрона в патроннике","В том состоянии, которого потребовал проверяющий"],
+[106,2,2,"При стрельбе в тире в противошумовых наушниках или защитных очках действуют следующие правила:","Следует закрепить их во избежание падения во время стрельбы","Запрещается надевать, поправлять и снимать их с оружием в руках","Разрешается надевать, поправлять и снимать их с оружием в руках"],
+[107,2,2,"Во время перемещения по тиру или стрельбищу (осмотр мишеней и т.п.) в соответствии с мерами по обеспечению безопасности:","Оружие должно находиться в руках стрелка","Оружие должно находиться в кобуре стрелка или на столике стрелка в разряженном и поставленном на предохранитель виде","Оружие по усмотрению стрелка либо находится в руках стрелка, либо помещается в кобуру стрелка"],
+[108,2,3,"Неполная разборка пистолета (для пистолетов, по конструкции сходных с пистолетом Макарова) производится в следующем порядке:","Отделить затвор, отвинтить винт рукоятки, отделить рукоятку от рамки, снять возвратную пружину","Выключить предохранитель (если таковой имеется), отвести спусковую скобу вниз и влево, отделить затвор от рамки, поставить спусковую скобу на место, снять со ствола возвратную пружину","Извлечь магазин из основания рукоятки, выключить предохранитель (если таковой имеется), убедиться в отсутствии патрона в патроннике, отвести спусковую скобу вниз и влево, отделить затвор от рамки, поставить спусковую скобу на место, снять со ствола возвратную пружину"],
+[109,2,2,"Отдачей оружия называется:","Подбрасывание ствола оружия в вертикальной плоскости при выстреле","Движение ствола и связанных с ним деталей оружия в сторону, противоположную движению снаряда (пули) во время выстрела","Передача разряженного и поставленного на предохранитель оружия инструктору (руководителю стрельбы) по окончании стрельб"],
+[110,2,2,"Согласно рекомендациям предприятий-производителей после стрельбы из пистолетов (револьверов) газовыми патронами их чистка производится:","Сухой тканью","Тканью, смоченной спиртом или спиртовым раствором","Тканью, смоченной ружейной смазкой"],
+[111,2,3,"Смазку оружия положено производить:","Одновременно с чисткой","По истечении 10 минут после чистки","Немедленно после чистки"],
+[112,2,1,"Для эффективного поражения цели предполагается ведение огня (в зависимости от дистанции):","На дистанции, не превышающей рекомендуемую для данного оружия","На любой дистанции (в том числе и превышающей рекомендуемую для данного оружия)","На дистанции, не превышающей максимальную дальность полета пули из данного оружия"],
+[113,2,2,"Меры безопасности при проведении на стрелковых объектах специальных упражнений (связанных с поворотами, разворотами, кувырками, перекатами и т.п.) предполагают:","Обязательное применение оружия, предназначенного для подразделений специального назначения","Нахождение оружия на предохранителе вплоть до момента открытия огня, направление оружия и производство выстрелов только по мишеням, установленным перед пулеприемником (пулеприемниками)","Надежное удержание оружия при передвижениях, без каких-либо дополнительных требований"],
+[114,2,3,"Для временного прекращения стрельбы в тире (на стрельбище) подается команда:","«Оружие к осмотру»","«Разряжай»","«Стой»"],
+[115,2,2,"Действия по временному прекращению стрельбы в тире (на стрельбище) или в ходе применения оружия гражданином в ситуациях необходимой обороны или крайней необходимости:","Прекратить нажим на хвост спускового крючка; извлечь магазин (для оружия, имеющего магазин), произвести контрольный спуск курка (в условиях безопасности по направлению возможного выстрела), включить предохранитель (если таковой имеется)","Прекратить нажим на хвост спускового крючка; включить предохранитель (если таковой имеется); при необходимости – перезарядить оружие","Прекратить нажим на хвост спускового крючка; извлечь магазин (для оружия, имеющего магазин), произвести контрольный спуск курка (в условиях безопасности по направлению возможного выстрела)"],
+[116,2,2,"В случае неполного израсходования патронов в тире (на стрельбище) подается команда:","«Оружие к осмотру»","«Разряжай»","«Стой»"],
+[117,2,3,"Действия при завершении стрельбы в тире (на стрельбище):","Прекратить нажим на хвост спускового крючка, включить предохранитель (если таковой имеется), в случае неполного израсходования патронов по команде «Разряжай» разрядить оружие (согласно правилам, установленным для данного оружия), далее произвести контрольный спуск курка (в условиях безопасности по направлению возможного выстрела)","Прекратить нажим на хвост спускового крючка; включить предохранитель (если таковой имеется)","Прекратить нажим на хвост спускового крючка, включить предохранитель (если таковой имеется), в случае неполного израсходования патронов по команде «Разряжай» разрядить оружие (согласно правилам, установленным для данного оружия); далее действовать по командам «Оружие – к осмотру» и «Отбой»"],
+[118,2,2,"Действия с пистолетом при получении в тире (на стрельбище) команды «Оружие – к осмотру»:","Извлечь магазин, предъявить оружие к осмотру (в положении «на затворной задержке») с приложенным сбоку (под большой палец правой руки) магазином. После осмотра оружия руководителем стрельбы (по команде «осмотрено») поставить оружие на предохранитель; магазин вставить в основание рукоятки, и в зависимости от доведенных условий стрельбы - вложить пистолет в кобуру или поместить его на стойку (столик) стрелка","Извлечь магазин, предъявить оружие к осмотру (в положении «на затворной задержке») с приложенным сбоку (под большой палец правой руки) магазином. После осмотра оружия руководителем стрельбы (по команде «осмотрено») снять с затворной задержки, произвести контрольный спуск курка, поставить оружие на предохранитель; магазин вставить в основание рукоятки, и в зависимости от доведенных условий стрельбы - вложить пистолет в кобуру или поместить его на стойку (столик) стрелка","Извлечь магазин, предъявить оружие к осмотру (в положении «на затворной задержке») с приложенным сбоку (под большой палец правой руки) магазином. После осмотра оружия руководителем стрельбы (по команде «осмотрено») снять с затворной задержки, произвести контрольный спуск курка, поставить оружие на предохранитель"],
+[119,2,2,"Команда «Отбой» подается в тире (на стрельбище):","Перед началом осмотра оружия стреляющих","После завершения осмотра оружия у всей смены стреляющих","После завершения осмотра оружия каждого отдельного стрелка в смене"],
+[120,2,1,"По команде «Отбой», подаваемой в тире (на стрельбище):","Все действия с оружием прекращаются","Не допускаются никакие действия с оружием, кроме действий по его разряжанию","Не допускаются никакие действия с оружием, кроме действий по его осмотру"],
+[121,2,3,"Действия с оружием по завершении его применения гражданином в ситуациях необходимой обороны или крайней необходимости (до прибытия правоохранительных органов):","Прекратить нажим на хвост спускового крючка, и не ставя оружие на предохранитель, дождаться указаний представителей правоохранительных органов","Прекратить нажим на хвост спускового крючка, разрядить оружие, включить предохранитель (если таковой имеется), убрать оружие в кобуру (для тех видов оружия, ношение которых осуществляется в кобуре)","Прекратить нажим на хвост спускового крючка; не разряжая оружие, включить предохранитель (если таковой имеется), убрать оружие в кобуру (для тех видов оружия, ношение которых осуществляется в кобуре)"],
+[122,2,2,"Тактика действий вооруженного обороняющегося при агрессивном поведении большой группы людей предполагает:","Применять оружие сразу, не пытаясь покинуть место конфликта или нейтрализовать конфликт","Покинуть место конфликта, при невозможности этого попытаться нейтрализовать агрессию путем переговоров; принимать решение на применение оружие только с учетом целесообразности его применения","В указанной ситуации не применять оружие ни при каких обстоятельствах"],
+[123,2,2,"Тактика действий при наличии на траектории стрельбы третьих лиц, не участвующих в нападении:","Обороняющийся, сам оставаясь в неподвижности, ожидает изменения ситуации (подавая третьим лицам соответствующие команды голосом)","Обороняющийся перемещается в направлении (влево, вправо, вниз или вверх), обеспечивающем безопасную для третьих лиц траекторию выстрела","Обороняющийся не отвлекается на действия, направленные на обеспечение безопасности третьих лиц"],
+[124,2,3,"Произойдет ли выстрел, если гражданин дослал патрон в патронник пистолета, передернув затвор и сразу поставил его на предохранитель (А при этом курок сорвался с боевого взвода!)?","Произойдет, как и при любом срыве курка с боевого взвода","Произойдет, но с замедлением до 30 секунд","Не произойдет, пока не будет произведен повторный взвод и спуск курка при снятом предохранителе"],
+[125,2,1,"Что применяется в качестве дополнительной меры по обеспечению сохранности огнестрельного короткоствольного оружия при его ношении:","Использование пистолетного (револьверного) шнура (ремешка)","Обматывание оружия изоляционной лентой","Ношение патронов отдельно от оружия"],
+[126,2,1,"Если при осмотре гильз на них обнаружены дефекты (микротрещина, незначительное вздутие гильзы), как Вы поступите с гильзой? (вопрос не используется при проверке на продление разрешений)","Утилизирую (выкину)","Если небольшая трещина буду использовать для дальнейшей сборки патрона","Постараюсь заделать трещину или обжать гильзу"],
+[127,2,3,"На что может повлиять чрезмерный заряд пороха в патроне? (вопрос не используется при проверке на продление разрешений)","На увеличение дальности стрельбы","На кучность попаданий при стрельбе","На приведение в негодность оружия (разрыв ствола и его частей)"],
+[128,2,3,"На что может повлиять некорректная (слабая) посадка капсюля в гильзе? (вопрос не используется при проверке на продление разрешений)","Разрыв патрона","Осечка при выстреле","Блокировка затвора оружия"],
+[129,2,2,"На что может повлиять чрезмерная посадка капсюля в гильзе? (вопрос не используется при проверке на продление разрешений)","Преждевременная инициация капсюля","Осечка при выстреле","Разрыв ствола и других частей оружия"],
+[130,2,3,"На что влияют необрезанные гильзы для огнестрельного оружия с нарезным стволом? (вопрос не используется при проверке на продление разрешений)","Затяжной выстрел","Осечка при выстреле","Точность выстрела"],
+[131,2,2,"Возможно ли при осуществлении посадки капсюля в гильзу наносить по капсюлю удары какими-либо предметами? (вопрос не используется при проверке на продление разрешений)","Да, возможно","Недопустимо и опасно","Возможно через мягкую ткань или прокладку"],
+[132,2,2,"Влияет ли на точность (кучность) стрельбы обрезка пуль горлышком гильзы? (вопрос не используется при проверке на продление разрешений)","Не влияет","Влияет","Обрезка вообще не предусмотрена"],
+[133,2,2,"К чему может привести чрезмерная обжимка среза горлышка гильзы (на огнестрельном полуавтоматическом оружии)? (вопрос не используется при проверке на продление разрешений)","Ни к чему не приведет","Патрон не войдет в патронник","Пуля не вылетит из гильзы"],
+[134,2,1,"К чему приведет недостаточная обжимка среза горлышка гильзы? (вопрос не используется при проверке на продление разрешений)","К заеданию в системе подачи патронов из магазина","К детонации капсюля","Не имеет значения при сборке патрона"],
+[135,2,2,"Допускается ли одновременно держать на рабочем столе капсюли и порох при сборке патронов? (вопрос не используется при проверке на продление разрешений)","Допускается","Не допускается и опасно","Не имеет значения при сборке патронов"],
+];
+const QUESTIONS = RAW.map(function(r){return {id:r[0], theme:r[1], correct:r[2], q:r[3], options:[r[4],r[5],r[6]]};});
+
+/* ======================================================== */
+
+/* ==========================================================================
+   Хранилище прогресса. Единственный источник состояния между запусками.
+
+   Почему localStorage, а не IndexedDB: объём данных — единицы килобайт,
+   доступ синхронный, транзакции не нужны. IndexedDB здесь дал бы асинхронность
+   и код восстановления схемы без выигрыша.
+
+   Риск, который надо понимать: в обычной вкладке Safari (не установленное PWA)
+   iOS может очистить localStorage после 7 дней без визитов. Установка на
+   домашний экран выводит хранилище из-под этого правила, но гарантий нет —
+   поэтому в приложении есть экспорт/импорт прогресса файлом.
+   ========================================================================== */
+
+const Store = (function () {
+  const KEY = 'boo2026.state';
+  const VERSION = 2;
+
+  const DEFAULTS = {
+    v: VERSION,
+    progress: {},        // qid -> { s, c, w, st, lr, l }
+    exams: [],           // история попыток экзамена (последние 50)
+    settings: {
+      theme: 'auto',           // auto | dark | light
+      shuffleOptions: true,    // перемешивать варианты
+      timerEnabled: true,      // таймер в экзамене
+      timerSec: 600,           // 10 минут
+      examScope: 'initial',    // initial | renewal (при продлении часть вопросов не используется)
+      instantFeedback: true,   // показывать верный ответ сразу (тренировка)
+      haptics: true
+    }
+  };
+
+  /* Доступность хранилища проверяется реальной записью, а не наличием
+     window.localStorage: объект существует и в приватном режиме Safari, и на
+     file://, но бросает на первой же записи. Знать это нужно до первого ответа
+     пользователя — иначе он сдаёт экзамен, а прогресс молча не сохраняется. */
+  /* Порядок объявлений важен: probe() пишет в storageError, поэтому
+     переменная должна быть инициализирована ДО вызова. Иначе на пути отказа
+     хранилища получаем ReferenceError по временной мёртвой зоне, и модуль
+     не загружается целиком — ровно в том сценарии, ради которого написан. */
+  let storageError = '';
+  let storageOK = probe();
+
+  function probe() {
+    try {
+      const k = KEY + '.probe';
+      localStorage.setItem(k, '1');
+      const ok = localStorage.getItem(k) === '1';
+      localStorage.removeItem(k);
+      return ok;
+    } catch (e) {
+      storageError = e && e.name ? e.name : 'ошибка доступа';
+      return false;
+    }
+  }
+
+  let state = load();
+  let saveTimer = null;
+
+  function load() {
+    let raw = null;
+    try { raw = localStorage.getItem(KEY); } catch (e) { /* приватный режим */ }
+    if (!raw) return clone(DEFAULTS);
+    try {
+      const parsed = JSON.parse(raw);
+      return migrate(parsed);
+    } catch (e) {
+      console.warn('[store] повреждённое состояние, сброс', e);
+      return clone(DEFAULTS);
+    }
+  }
+
+  function migrate(s) {
+    if (!s || typeof s !== 'object') return clone(DEFAULTS);
+    const out = clone(DEFAULTS);
+    if (s.progress && typeof s.progress === 'object') {
+      for (const k in s.progress) {
+        const p = s.progress[k];
+        if (!p) continue;
+        out.progress[k] = {
+          s: num(p.s), c: num(p.c), w: num(p.w),
+          st: num(p.st), lr: p.lr === 1 ? 1 : 0, l: num(p.l)
+        };
+      }
+    }
+    if (Array.isArray(s.exams)) out.exams = s.exams.slice(-50);
+    if (s.settings) Object.assign(out.settings, s.settings);
+    out.v = VERSION;
+    return out;
+  }
+
+  function num(x) { return typeof x === 'number' && isFinite(x) ? x : 0; }
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+
+  /* Отложенная запись — только для настроек, где пользователь может быстро
+     щёлкать переключателями. Ответы на вопросы пишутся сразу (см. record):
+     сериализация ~15 КБ занимает доли миллисекунды, а отложенная запись
+     означала бы окно, в котором закрытие приложения теряет последний ответ. */
+  function save() {
+    if (saveTimer) return;
+    saveTimer = setTimeout(function () { saveTimer = null; write(); }, 150);
+  }
+
+  function write() {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(state));
+      storageOK = true;
+      storageError = '';
+      return true;
+    } catch (e) {
+      /* Чаще всего QuotaExceededError в приватном режиме Safari либо
+         SecurityError на file://. Молча глотать нельзя: пользователь должен
+         знать, что его прогресс не сохраняется. */
+      storageOK = false;
+      storageError = e && e.name ? e.name : 'ошибка записи';
+      console.warn('[store] запись не удалась:', storageError);
+      return false;
+    }
+  }
+
+  function flush() {
+    if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; }
+    return write();
+  }
+
+  function available() { return storageOK; }
+  function lastError() { return storageError; }
+
+  // ---- прогресс -----------------------------------------------------------
+
+  function stat(qid) {
+    return state.progress[qid] || { s: 0, c: 0, w: 0, st: 0, lr: 0, l: 0 };
+  }
+
+  function record(qid, isCorrect) {
+    const p = state.progress[qid] || { s: 0, c: 0, w: 0, st: 0, lr: 0, l: 0 };
+    p.s += 1;
+    if (isCorrect) { p.c += 1; p.st += 1; p.lr = 1; }
+    else           { p.w += 1; p.st = 0;  p.lr = 0; }
+    p.l = Date.now();
+    state.progress[qid] = p;
+    flush();          // ответ сохраняется немедленно, без окна потери
+  }
+
+  /** Вопрос «на исправлении»: были ошибки и ещё нет двух верных подряд. */
+  function isWeak(qid) {
+    const p = stat(qid);
+    return p.w > 0 && p.st < 2;
+  }
+
+  /** Вопрос считается освоенным при двух верных ответах подряд. */
+  function isLearned(qid) {
+    return stat(qid).st >= 2;
+  }
+
+  function weakIds(all) {
+    return all.filter(function (q) { return isWeak(q.id); }).map(function (q) { return q.id; });
+  }
+
+  function summary(all) {
+    let learned = 0, weak = 0, touched = 0, answers = 0, right = 0;
+    all.forEach(function (q) {
+      const p = stat(q.id);
+      if (p.s > 0) touched++;
+      answers += p.s; right += p.c;
+      if (isLearned(q.id)) learned++;
+      else if (isWeak(q.id)) weak++;
+    });
+    return {
+      total: all.length, learned: learned, weak: weak, touched: touched,
+      answers: answers, right: right,
+      accuracy: answers ? Math.round(right / answers * 100) : 0
+    };
+  }
+
+  // ---- экзамены -----------------------------------------------------------
+
+  function addExam(rec) {
+    state.exams.push(rec);
+    if (state.exams.length > 50) state.exams = state.exams.slice(-50);
+    flush();
+  }
+  function exams() { return state.exams.slice().reverse(); }
+
+  // ---- настройки ----------------------------------------------------------
+
+  function settings() { return state.settings; }
+  function set(key, value) { state.settings[key] = value; save(); }
+
+  // ---- обслуживание -------------------------------------------------------
+
+  function resetProgress() {
+    state.progress = {}; state.exams = []; flush();
+  }
+
+  function exportJSON() {
+    flush();
+    return JSON.stringify({
+      app: 'boo2026', exported: new Date().toISOString(), bank: BANK_VERSION, state: state
+    }, null, 2);
+  }
+
+  function importJSON(text) {
+    const obj = JSON.parse(text);
+    const src = obj && obj.state ? obj.state : obj;
+    state = migrate(src);
+    flush();
+  }
+
+  window.addEventListener('pagehide', flush);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') flush();
+  });
+
+  return {
+    stat: stat, record: record, isWeak: isWeak, isLearned: isLearned,
+    weakIds: weakIds, summary: summary,
+    addExam: addExam, exams: exams,
+    settings: settings, set: set,
+    available: available, lastError: lastError,
+    resetProgress: resetProgress, exportJSON: exportJSON, importJSON: importJSON,
+    flush: flush
+  };
+})();
+
+/* ======================================================== */
+
+/* ==========================================================================
+   БОО 2026 — логика приложения.
+
+   Архитектура: один модуль, hash-роутер, рендер экранов строками + делегирование
+   событий на контейнер. Фреймворк не берём осознанно: экранов семь, состояние
+   плоское, а любая зависимость из CDN ломает главное требование — автономность.
+
+   Единый «движок сессии» (Session) обслуживает экзамен, тренировку и работу над
+   ошибками; режимы отличаются только правилами набора вопросов и обратной связи.
+   ========================================================================== */
+
+(function () {
+  'use strict';
+
+  const RENEWAL_EXCLUDE = 'не используется при проверке на продление';
+  const EXAM_SIZE = 10;
+  const EXAM_MAX_ERRORS = 1;
+
+  const $screen  = document.getElementById('screen');
+  const $title   = document.getElementById('topbar-title');
+  const $back    = document.getElementById('btn-back');
+  const $slot    = document.getElementById('topbar-slot');
+  const $tabbar  = document.getElementById('tabbar');
+  const $toast   = document.getElementById('toast');
+
+  let session = null;        // активная сессия вопросов
+  let timerId = null;
+  let toastId = null;
+
+  /* ---------------------------- утилиты --------------------------------- */
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  /** Fisher–Yates. Math.random здесь достаточно: это тренажёр, не лотерея. */
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function fmtTime(sec) {
+    const m = Math.floor(Math.max(0, sec) / 60), s = Math.max(0, sec) % 60;
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  function fmtDate(ts) {
+    const d = new Date(ts);
+    const p = function (n) { return n < 10 ? '0' + n : '' + n; };
+    return p(d.getDate()) + '.' + p(d.getMonth() + 1) + '.' + d.getFullYear() +
+           ' ' + p(d.getHours()) + ':' + p(d.getMinutes());
+  }
+
+  function plural(n, one, few, many) {
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return one;
+    if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return few;
+    return many;
+  }
+
+  function toast(msg) {
+    $toast.textContent = msg;
+    $toast.hidden = false;
+    clearTimeout(toastId);
+    toastId = setTimeout(function () { $toast.hidden = true; }, 2200);
+  }
+
+  /* Тактильный отклик. На iOS Safari navigator.vibrate не поддерживается —
+     вызов молча ничего не делает, отдельная ветка не нужна. */
+  function buzz(pattern) {
+    if (!Store.settings().haptics) return;
+    if (navigator.vibrate) { try { navigator.vibrate(pattern); } catch (e) {} }
+  }
+
+  function pool(scope) {
+    if (scope === 'renewal') {
+      return QUESTIONS.filter(function (q) { return q.q.indexOf(RENEWAL_EXCLUDE) === -1; });
+    }
+    return QUESTIONS;
+  }
+
+  /* ---------------------------- движок сессии ---------------------------- */
+
+  /**
+   * mode: 'exam' | 'train' | 'errors'
+   * items: массив вопросов в порядке показа
+   */
+  function Session(mode, items, opts) {
+    opts = opts || {};
+    this.mode = mode;
+    this.items = items;
+    this.idx = 0;
+    this.answers = [];             // { id, picked, correct, ok }
+    this.startedAt = Date.now();
+    this.limitSec = opts.limitSec || 0;
+    this.deadline = this.limitSec ? Date.now() + this.limitSec * 1000 : 0;
+    this.instant = opts.instant !== false;   // показывать верный ответ сразу
+    this.locked = false;                     // ответ на текущий вопрос уже дан
+    this.order = items.map(function (q) {
+      const idxs = Store.settings().shuffleOptions ? shuffle([0, 1, 2]) : [0, 1, 2];
+      return idxs;
+    });
+  }
+
+  Session.prototype.current = function () { return this.items[this.idx]; };
+  Session.prototype.errors = function () {
+    return this.answers.filter(function (a) { return !a.ok; }).length;
+  };
+  Session.prototype.finished = function () { return this.idx >= this.items.length; };
+
+  Session.prototype.answer = function (displayPos) {
+    const q = this.current();
+    const map = this.order[this.idx];
+    const realIdx = map[displayPos];           // 0..2 в исходном порядке
+    const ok = (realIdx + 1) === q.correct;
+    this.answers.push({ id: q.id, picked: realIdx, correct: q.correct - 1, ok: ok });
+    Store.record(q.id, ok);
+    this.locked = true;
+    return ok;
+  };
+
+  Session.prototype.next = function () { this.idx++; this.locked = false; };
+
+  /* ------------------------------ роутер --------------------------------- */
+
+  const routes = {
+    '/':         screenHome,
+    '/train':    screenTrainSetup,
+    '/run':      screenRun,
+    '/result':   screenResult,
+    '/study':    screenStudy,
+    '/errors':   screenErrors,
+    '/stats':    screenStats,
+    '/settings': screenSettings
+  };
+
+  function parseHash() {
+    const h = location.hash.replace(/^#/, '') || '/';
+    const qi = h.indexOf('?');
+    const path = qi === -1 ? h : h.slice(0, qi);
+    const params = {};
+    if (qi !== -1) {
+      h.slice(qi + 1).split('&').forEach(function (kv) {
+        const p = kv.split('=');
+        params[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || '');
+      });
+    }
+    return { path: path || '/', params: params };
+  }
+
+  function render() {
+    const r = parseHash();
+    const fn = routes[r.path] || screenHome;
+    stopTimer();
+    $slot.innerHTML = '';
+    const isTab = ['/', '/study', '/errors', '/stats'].indexOf(r.path) !== -1;
+    /* На вкладках «Назад» не нужен: переключение идёт таббаром, а history.back()
+       увёл бы в непредсказуемое место истории. */
+    $back.hidden = isTab;
+    $tabbar.hidden = (r.path === '/run');
+    Array.prototype.forEach.call($tabbar.querySelectorAll('.tab'), function (a) {
+      if (isTab && a.dataset.tab === r.path) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
+    $screen.scrollTop = 0;
+    fn(r.params);
+  }
+
+  function go(path) { location.hash = '#' + path; }
+
+  /* ------------------------------ Главная -------------------------------- */
+
+  /**
+   * Предупреждение о недоступном хранилище. Показывается, только если запись
+   * реально не проходит: молчаливая потеря прогресса — худший из возможных
+   * исходов, пользователь узнаёт о ней, уже отработав десятки вопросов.
+   */
+  function storageWarning() {
+    if (Store.available()) return '';
+    const fileMode = location.protocol === 'file:';
+    const why = fileMode
+      ? 'Приложение открыто как файл с диска. В этом режиме браузер запрещает сайту сохранять данные.'
+      : 'Браузер отказал в доступе к хранилищу (' + esc(Store.lastError()) +
+        '). Обычно это приватное окно или страница внутри встроенного просмотрщика.';
+    return '<div class="card" style="border-color:var(--bad);background:var(--bad-soft)">' +
+      '<div class="menu__title" style="color:var(--bad)">Прогресс не сохраняется</div>' +
+      '<div class="small" style="margin-top:6px">' + why +
+      ' Результаты пропадут при закрытии.<br><br>' +
+      'Откройте приложение по адресу <b>https://</b> и добавьте его на домашний экран — тогда прогресс будет храниться постоянно.</div>' +
+      '</div>';
+  }
+
+  function screenHome() {
+    $title.textContent = 'БОО 2026';
+    const s = Store.summary(QUESTIONS);
+    const weak = s.weak;
+    const pct = Math.round(s.learned / s.total * 100);
+    const last = Store.exams()[0];
+
+    $screen.innerHTML =
+      storageWarning() +
+      '<div class="card">' +
+        '<div class="row"><div><div class="menu__title">Освоено вопросов</div>' +
+        '<div class="small muted">' + s.learned + ' из ' + s.total + ' · два верных ответа подряд</div></div>' +
+        '<div class="stat__v">' + pct + '%</div></div>' +
+        '<div class="bar mt8"><div class="bar__fill' + (pct === 100 ? ' bar__fill--ok' : '') + '" style="width:' + pct + '%"></div></div>' +
+      '</div>' +
+
+      '<div class="menu">' +
+        item('🎯', 'Экзамен', EXAM_SIZE + ' вопросов, допускается не более ' + EXAM_MAX_ERRORS + ' ошибки', 'exam') +
+        item('📚', 'Тренировка', 'По темам, с разбором каждого ответа', 'train') +
+        item('🔁', 'Работа над ошибками', weak ? weak + ' ' + plural(weak, 'вопрос', 'вопроса', 'вопросов') + ' требует повторения' : 'Ошибок нет', 'errors') +
+      '</div>' +
+
+      (last ?
+        '<div class="section-title">Последняя попытка</div>' +
+        '<div class="card card--tight"><div class="row">' +
+          '<div><div class="small">' + fmtDate(last.ts) + '</div>' +
+          '<div class="tiny muted">' + last.correct + ' из ' + last.total +
+          (last.dur ? ' · ' + fmtTime(last.dur) : '') + '</div></div>' +
+          '<span class="pill ' + (last.passed ? 'pill--ok' : 'pill--bad') + '">' +
+          (last.passed ? 'Сдан' : 'Не сдан') + '</span>' +
+        '</div></div>' : '') +
+
+      '<div class="section-title">Ещё</div>' +
+      '<div class="menu">' +
+        item('⚙️', 'Настройки', 'Тема, таймер, перемешивание, данные', 'settings') +
+      '</div>' +
+
+      '<p class="tiny muted center mt24">Банк вопросов ред. ' + BANK_VERSION + ' · ' + QUESTIONS.length + ' вопросов<br>' +
+      'Работает без интернета. Неофициальный тренажёр.</p>';
+
+    function item(ic, t, sub, act) {
+      return '<button class="menu__item" type="button" data-act="' + act + '">' +
+        '<span class="menu__icon">' + ic + '</span>' +
+        '<span class="menu__body"><span class="menu__title">' + t + '</span>' +
+        '<span class="menu__sub">' + esc(sub) + '</span></span>' +
+        '<span class="menu__chev">›</span></button>';
+    }
+  }
+
+  /* --------------------------- Настройка тренировки ---------------------- */
+
+  let trainCfg = { themes: { 1: true, 2: true }, onlyNew: false, count: 20 };
+
+  function screenTrainSetup() {
+    $title.textContent = 'Тренировка';
+    const counts = { 1: 0, 2: 0 };
+    QUESTIONS.forEach(function (q) { counts[q.theme]++; });
+
+    $screen.innerHTML =
+      '<div class="section-title">Темы</div>' +
+      '<div class="card" style="padding:0">' +
+        theme(1, counts[1]) + theme(2, counts[2]) +
+      '</div>' +
+
+      '<div class="section-title">Объём</div>' +
+      '<div class="seg" id="seg-count">' +
+        [10, 20, 40, 0].map(function (n) {
+          return '<button class="seg__btn" type="button" data-n="' + n + '" aria-pressed="' +
+            (trainCfg.count === n) + '">' + (n === 0 ? 'Все' : n) + '</button>';
+        }).join('') +
+      '</div>' +
+
+      '<div class="card mt16" style="padding:0">' +
+        '<label class="check"><input type="checkbox" id="only-new"' + (trainCfg.onlyNew ? ' checked' : '') + '>' +
+        '<span class="check__body"><span class="menu__title" style="font-size:15px">Приоритет неотработанным</span>' +
+        '<span class="menu__sub">Сначала вопросы с ошибками и те, что ещё не встречались</span></span></label>' +
+      '</div>' +
+
+      '<div class="mt24"><button class="btn" type="button" data-act="start-train">Начать</button></div>';
+
+    function theme(id, n) {
+      return '<label class="check"><input type="checkbox" data-theme="' + id + '"' +
+        (trainCfg.themes[id] ? ' checked' : '') + '>' +
+        '<span class="check__body"><span class="menu__title" style="font-size:15px">' + THEMES[id] + '</span>' +
+        '<span class="menu__sub">' + n + ' ' + plural(n, 'вопрос', 'вопроса', 'вопросов') + '</span></span></label>';
+    }
+  }
+
+  function startTrain() {
+    const themes = Object.keys(trainCfg.themes).filter(function (k) { return trainCfg.themes[k]; }).map(Number);
+    if (!themes.length) { toast('Выберите хотя бы одну тему'); return; }
+    let list = QUESTIONS.filter(function (q) { return themes.indexOf(q.theme) !== -1; });
+
+    if (trainCfg.onlyNew) {
+      /* Вес: слабые (были ошибки) → новые → освоенные. Внутри группы случайно. */
+      const rank = function (q) {
+        const p = Store.stat(q.id);
+        if (p.w > 0 && p.st < 2) return 0;
+        if (p.s === 0) return 1;
+        return 2;
+      };
+      list = shuffle(list).sort(function (a, b) { return rank(a) - rank(b); });
+    } else {
+      list = shuffle(list);
+    }
+    if (trainCfg.count > 0) list = list.slice(0, trainCfg.count);
+
+    session = new Session('train', list, { instant: Store.settings().instantFeedback });
+    go('/run');
+  }
+
+  function startExam() {
+    const scope = Store.settings().examScope === 'renewal' ? 'renewal' : 'initial';
+    const src = pool(scope);
+    const list = shuffle(src).slice(0, EXAM_SIZE);
+    const st = Store.settings();
+    session = new Session('exam', list, {
+      instant: false,
+      limitSec: st.timerEnabled ? st.timerSec : 0
+    });
+    go('/run');
+  }
+
+  function startErrors() {
+    const ids = Store.weakIds(QUESTIONS);
+    if (!ids.length) { toast('Ошибок нет — повторять нечего'); return; }
+    const list = shuffle(QUESTIONS.filter(function (q) { return ids.indexOf(q.id) !== -1; }));
+    session = new Session('errors', list, { instant: true });
+    go('/run');
+  }
+
+  /* ------------------------------ Прохождение ---------------------------- */
+
+  function screenRun() {
+    if (!session) { go('/'); return; }
+    if (session.finished()) { go('/result'); return; }
+
+    const q = session.current();
+    const map = session.order[session.idx];
+    const n = session.items.length;
+    const num = session.idx + 1;
+    const pct = Math.round(num / n * 100);
+
+    $title.textContent = session.mode === 'exam' ? 'Экзамен'
+                       : session.mode === 'errors' ? 'Работа над ошибками' : 'Тренировка';
+
+    if (session.mode === 'exam' && session.limitSec) {
+      $slot.innerHTML = '<span class="timer" id="timer">' + fmtTime(session.limitSec) + '</span>';
+      startTimer();
+    }
+
+    $screen.innerHTML =
+      '<div class="quiz">' +
+        '<div class="quiz__meta">' +
+          '<span>Вопрос ' + num + ' из ' + n + '</span>' +
+          '<span>' + esc(THEMES[q.theme]) + '</span>' +
+        '</div>' +
+        '<div class="bar quiz__progress"><div class="bar__fill" style="width:' + pct + '%"></div></div>' +
+        '<p class="quiz__q">' + esc(q.q) + '</p>' +
+        '<div class="opts" id="opts">' +
+          map.map(function (realIdx, pos) {
+            return '<button class="opt" type="button" data-pos="' + pos + '">' +
+              '<span class="opt__n">' + (pos + 1) + '</span>' +
+              '<span class="opt__t">' + esc(q.options[realIdx]) + '</span></button>';
+          }).join('') +
+        '</div>' +
+        '<div id="verdict"></div>' +
+        '<div class="quiz__foot" id="foot">' +
+          '<button class="btn btn--ghost" type="button" data-act="abort">Прервать</button>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function onAnswer(pos) {
+    if (!session || session.locked) return;
+    const q = session.current();
+    const map = session.order[session.idx];
+    const ok = session.answer(pos);
+    const correctPos = map.indexOf(q.correct - 1);
+
+    const opts = $screen.querySelectorAll('.opt');
+    Array.prototype.forEach.call(opts, function (el) { el.disabled = true; });
+
+    if (session.instant) {
+      opts[correctPos].dataset.state = 'right';
+      if (!ok) opts[pos].dataset.state = 'wrong';
+    } else {
+      opts[pos].dataset.state = 'picked';
+    }
+
+    buzz(ok ? 12 : [18, 60, 18]);
+
+    const $v = document.getElementById('verdict');
+    if (session.instant) {
+      $v.innerHTML = '<div class="verdict ' + (ok ? 'verdict--ok' : 'verdict--bad') + '">' +
+        (ok ? '✓ Верно' : '✕ Неверно. Правильный ответ — ' + (correctPos + 1)) + '</div>';
+    }
+
+    const lastQ = session.idx === session.items.length - 1;
+    const $foot = document.getElementById('foot');
+    $foot.className = 'quiz__foot quiz__foot--pinned';
+    $foot.innerHTML =
+      '<button class="btn" type="button" data-act="next">' +
+      (lastQ ? 'Завершить' : 'Далее') + '</button>' +
+      '<button class="btn btn--ghost" type="button" data-act="abort">Прервать</button>';
+
+    /* Показываем разбор, не заставляя пользователя искать его прокруткой. */
+    if (session.instant) {
+      const v = $v.firstElementChild;
+      if (v && v.scrollIntoView) v.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }
+
+  function nextQuestion() {
+    session.next();
+    if (session.finished()) { finishSession(); return; }
+    render();
+  }
+
+  function finishSession() {
+    stopTimer();
+    if (session.mode === 'exam') {
+      const dur = Math.round((Date.now() - session.startedAt) / 1000);
+      const correct = session.answers.filter(function (a) { return a.ok; }).length;
+      const answered = session.answers.length;
+      const wrong = session.items.length - correct;   // неотвеченные = ошибки
+      Store.addExam({
+        ts: Date.now(), total: session.items.length, correct: correct,
+        answered: answered, dur: dur, passed: wrong <= EXAM_MAX_ERRORS
+      });
+    }
+    go('/result');
+  }
+
+  function abortSession() {
+    if (!confirm('Прервать? Ответы на текущие вопросы уже учтены в статистике.')) return;
+    stopTimer();
+    session = null;
+    go('/');
+  }
+
+  /* ------------------------------- Таймер -------------------------------- */
+
+  function startTimer() {
+    stopTimer();
+    timerId = setInterval(function () {
+      const left = Math.round((session.deadline - Date.now()) / 1000);
+      const el = document.getElementById('timer');
+      if (el) {
+        el.textContent = fmtTime(left);
+        el.classList.toggle('timer--alarm', left <= 60);
+      }
+      if (left <= 0) {
+        stopTimer();
+        toast('Время вышло');
+        buzz([30, 80, 30, 80, 30]);
+        finishSession();
+      }
+    }, 1000);
+  }
+  function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
+
+  /* ------------------------------ Результат ------------------------------ */
+
+  function screenResult() {
+    if (!session) { go('/'); return; }
+    const total = session.items.length;
+    const correct = session.answers.filter(function (a) { return a.ok; }).length;
+    const wrong = total - correct;
+    const isExam = session.mode === 'exam';
+    const passed = wrong <= EXAM_MAX_ERRORS;
+    const dur = Math.round((Date.now() - session.startedAt) / 1000);
+
+    $title.textContent = 'Результат';
+    $back.hidden = true;
+
+    const okState = isExam ? passed : (wrong === 0);
+
+    let html =
+      '<div class="result-hero">' +
+        '<div class="result-hero__mark result-hero__mark--' + (okState ? 'ok' : 'bad') + '">' +
+          (okState ? '✓' : '✕') + '</div>' +
+        '<h2 class="result-hero__title">' +
+          (isExam ? (passed ? 'Экзамен сдан' : 'Экзамен не сдан') : correct + ' из ' + total) +
+        '</h2>' +
+        '<p class="result-hero__sub">' +
+          correct + ' из ' + total + ' верно · ' + fmtTime(dur) +
+          (isExam ? '<br>Порог: не более ' + EXAM_MAX_ERRORS + ' ошибки' : '') +
+        '</p>' +
+      '</div>';
+
+    const misses = session.answers.filter(function (a) { return !a.ok; });
+    if (misses.length) {
+      html += '<div class="section-title">Разбор ошибок</div><div class="card review">';
+      misses.forEach(function (a) {
+        const q = QUESTIONS.filter(function (x) { return x.id === a.id; })[0];
+        html += '<div class="review__item">' +
+          '<div class="review__q">' + esc(q.q) + '</div>' +
+          '<div class="review__a review__a--bad">Ваш ответ: ' + esc(q.options[a.picked]) + '</div>' +
+          '<div class="review__a review__a--ok">Верно: ' + esc(q.options[a.correct]) + '</div>' +
+        '</div>';
+      });
+      html += '</div>';
+    }
+
+    if (session.answers.length < total) {
+      html += '<p class="small muted center">Без ответа осталось ' +
+        (total - session.answers.length) + ' — засчитаны как ошибки.</p>';
+    }
+
+    html += '<div class="mt24">' +
+      '<button class="btn" type="button" data-act="' + (isExam ? 'exam' : 'again') + '">' +
+        (isExam ? 'Пройти ещё раз' : 'Повторить набор') + '</button>' +
+      (misses.length ? '<button class="btn btn--secondary" type="button" data-act="errors">Отработать ошибки</button>' : '') +
+      '<button class="btn btn--ghost" type="button" data-act="home">На главную</button>' +
+      '</div>';
+
+    $screen.innerHTML = html;
+  }
+
+  /* ------------------------------- Билеты -------------------------------- */
+
+  let studyTheme = 1, studyIdx = 0;
+
+  function screenStudy() {
+    $title.textContent = 'Билеты';
+    const list = QUESTIONS.filter(function (q) { return q.theme === studyTheme; });
+    if (studyIdx >= list.length) studyIdx = 0;
+    const q = list[studyIdx];
+    const p = Store.stat(q.id);
+
+    $screen.innerHTML =
+      '<div class="seg" id="seg-theme">' +
+        [1, 2].map(function (t) {
+          return '<button class="seg__btn" type="button" data-theme="' + t + '" aria-pressed="' +
+            (studyTheme === t) + '">' + THEMES[t].split(' ')[0] + '</button>';
+        }).join('') +
+      '</div>' +
+
+      '<div class="quiz__meta mt16">' +
+        '<span>№ ' + q.id + ' · ' + (studyIdx + 1) + ' из ' + list.length + '</span>' +
+        '<span>' + (p.s ? (Store.isLearned(q.id) ? '<span class="pill pill--ok">освоен</span>' :
+                          (p.w ? '<span class="pill pill--bad">с ошибками</span>' : '<span class="pill">в работе</span>')) : '') + '</span>' +
+      '</div>' +
+
+      '<div class="card"><p class="quiz__q" style="margin-bottom:12px">' + esc(q.q) + '</p>' +
+      '<div class="opts">' +
+        q.options.map(function (o, i) {
+          const right = (i + 1) === q.correct;
+          return '<div class="opt"' + (right ? ' data-state="right"' : '') + '>' +
+            '<span class="opt__n">' + (i + 1) + '</span>' +
+            '<span class="opt__t">' + esc(o) + '</span></div>';
+        }).join('') +
+      '</div></div>' +
+
+      '<div class="row mt16">' +
+        '<button class="btn btn--secondary" type="button" data-act="study-prev" style="flex:1' +
+          (studyIdx === 0 ? ';opacity:.45' : '') + '"' + (studyIdx === 0 ? ' disabled' : '') + '>← Назад</button>' +
+        '<button class="btn btn--secondary" type="button" data-act="study-next" style="flex:1"' +
+          (studyIdx === list.length - 1 ? ' disabled' : '') + '>Вперёд →</button>' +
+      '</div>' +
+      '<div class="mt8"><button class="btn btn--ghost" type="button" data-act="study-jump">Перейти к номеру…</button></div>';
+  }
+
+  /* ------------------------------- Ошибки -------------------------------- */
+
+  function screenErrors() {
+    $title.textContent = 'Работа над ошибками';
+    const weak = QUESTIONS.filter(function (q) { return Store.isWeak(q.id); });
+
+    if (!weak.length) {
+      $screen.innerHTML =
+        '<div class="empty"><div class="empty__icon">🎉</div>' +
+        '<p>Вопросов с ошибками нет.<br>Пройдите экзамен или тренировку — сюда попадут те, где вы ошиблись.</p></div>' +
+        '<button class="btn btn--secondary" type="button" data-act="train">К тренировке</button>';
+      return;
+    }
+
+    $screen.innerHTML =
+      '<div class="card"><div class="row">' +
+        '<div><div class="menu__title">' + weak.length + ' ' + plural(weak.length, 'вопрос', 'вопроса', 'вопросов') + '</div>' +
+        '<div class="small muted">Уходят из списка после двух верных ответов подряд</div></div>' +
+      '</div></div>' +
+      '<button class="btn" type="button" data-act="errors">Отработать</button>' +
+      '<div class="section-title">Список</div><div class="card review">' +
+        weak.map(function (q) {
+          const p = Store.stat(q.id);
+          return '<div class="review__item">' +
+            '<div class="review__q">' + esc(q.q) + '</div>' +
+            '<div class="tiny muted">№ ' + q.id + ' · ' + THEMES[q.theme] +
+            ' · ошибок: ' + p.w + ', верно подряд: ' + p.st + '</div></div>';
+        }).join('') +
+      '</div>';
+  }
+
+  /* ----------------------------- Статистика ------------------------------ */
+
+  function screenStats() {
+    $title.textContent = 'Статистика';
+    const s = Store.summary(QUESTIONS);
+    const ex = Store.exams();
+    const passed = ex.filter(function (e) { return e.passed; }).length;
+
+    const byTheme = [1, 2].map(function (t) {
+      const list = QUESTIONS.filter(function (q) { return q.theme === t; });
+      const done = list.filter(function (q) { return Store.isLearned(q.id); }).length;
+      const pct = Math.round(done / list.length * 100);
+      return '<div class="card card--tight">' +
+        '<div class="row"><span class="small">' + THEMES[t] + '</span>' +
+        '<span class="small muted">' + done + '/' + list.length + '</span></div>' +
+        '<div class="bar mt8"><div class="bar__fill' + (pct === 100 ? ' bar__fill--ok' : '') +
+        '" style="width:' + pct + '%"></div></div></div>';
+    }).join('');
+
+    $screen.innerHTML =
+      '<div class="stat-grid">' +
+        stat(s.learned + '/' + s.total, 'Освоено') +
+        stat(s.accuracy + '%', 'Точность ответов') +
+        stat(s.weak, 'На исправлении') +
+        stat(ex.length ? passed + '/' + ex.length : '—', 'Экзамены сданы') +
+      '</div>' +
+
+      '<div class="section-title">По темам</div>' + byTheme +
+
+      '<div class="section-title">История экзаменов</div>' +
+      (ex.length ?
+        '<div class="card hist">' + ex.slice(0, 20).map(function (e) {
+          return '<div class="hist__row"><span>' + fmtDate(e.ts) + '</span>' +
+            '<span class="muted">' + e.correct + '/' + e.total +
+            (e.dur ? ' · ' + fmtTime(e.dur) : '') + '</span>' +
+            '<span class="pill ' + (e.passed ? 'pill--ok' : 'pill--bad') + '">' +
+            (e.passed ? 'сдан' : 'не сдан') + '</span></div>';
+        }).join('') + '</div>'
+        : '<div class="empty"><div class="empty__icon">📊</div><p>Попыток пока нет</p></div>');
+
+    function stat(v, l) {
+      return '<div class="stat"><div class="stat__v">' + v + '</div><div class="stat__l">' + l + '</div></div>';
+    }
+  }
+
+  /* ----------------------------- Настройки -------------------------------- */
+
+  function screenSettings() {
+    $title.textContent = 'Настройки';
+    const st = Store.settings();
+
+    $screen.innerHTML =
+      '<div class="section-title">Экзамен</div>' +
+      '<div class="card" style="padding:0">' +
+        toggle('timerEnabled', 'Таймер', 'Ограничение времени на ' + EXAM_SIZE + ' вопросов', st.timerEnabled) +
+        '<div class="check"><span class="check__body"><span class="menu__title" style="font-size:15px">Лимит времени</span>' +
+        '<span class="menu__sub">Официальный норматив в открытых источниках не подтверждён; значение по умолчанию — 10 мин</span></span>' +
+        '<select id="sel-timer" style="background:var(--bg-elev-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px">' +
+          [300, 600, 900, 1200].map(function (v) {
+            return '<option value="' + v + '"' + (st.timerSec === v ? ' selected' : '') + '>' + (v / 60) + ' мин</option>';
+          }).join('') +
+        '</select></div>' +
+        '<div class="check"><span class="check__body"><span class="menu__title" style="font-size:15px">Тип проверки</span>' +
+        '<span class="menu__sub">При продлении часть вопросов не используется</span></span>' +
+        '<select id="sel-scope" style="background:var(--bg-elev-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px">' +
+          '<option value="initial"' + (st.examScope !== 'renewal' ? ' selected' : '') + '>Первичная</option>' +
+          '<option value="renewal"' + (st.examScope === 'renewal' ? ' selected' : '') + '>Продление</option>' +
+        '</select></div>' +
+      '</div>' +
+
+      '<div class="section-title">Вопросы</div>' +
+      '<div class="card" style="padding:0">' +
+        toggle('shuffleOptions', 'Перемешивать варианты', 'Чтобы не запоминать позицию ответа', st.shuffleOptions) +
+        toggle('instantFeedback', 'Разбор сразу', 'В тренировке показывать верный ответ после выбора', st.instantFeedback) +
+        toggle('haptics', 'Вибро-отклик', 'На iPhone в Safari не поддерживается', st.haptics) +
+      '</div>' +
+
+      '<div class="section-title">Оформление</div>' +
+      '<div class="seg" id="seg-theme-ui">' +
+        [['auto', 'Как в системе'], ['dark', 'Тёмная'], ['light', 'Светлая']].map(function (p) {
+          return '<button class="seg__btn" type="button" data-t="' + p[0] + '" aria-pressed="' +
+            (st.theme === p[0]) + '">' + p[1] + '</button>';
+        }).join('') +
+      '</div>' +
+
+      '<div class="section-title">Данные</div>' +
+      '<button class="btn btn--secondary" type="button" data-act="export">Выгрузить прогресс в файл</button>' +
+      '<button class="btn btn--secondary" type="button" data-act="import">Загрузить из файла</button>' +
+      '<button class="btn btn--danger" type="button" data-act="reset">Сбросить весь прогресс</button>' +
+      '<input type="file" id="file-import" accept="application/json,.json" hidden>' +
+
+      '<p class="tiny muted mt24">Версия банка: ' + BANK_VERSION + ' · вопросов: ' + QUESTIONS.length + '<br>' +
+      'Источник вопросов: сайт стрелкового клуба «ГРИДИНЪ» (раздел тестирования).<br>' +
+      'Приложение неофициальное и не заменяет подготовку в лицензированной организации.</p>';
+
+    function toggle(key, title, sub, on) {
+      return '<label class="check"><span class="check__body">' +
+        '<span class="menu__title" style="font-size:15px">' + title + '</span>' +
+        '<span class="menu__sub">' + sub + '</span></span>' +
+        '<span class="switch"><input type="checkbox" data-set="' + key + '"' + (on ? ' checked' : '') + '>' +
+        '<span class="switch__track"></span></span></label>';
+    }
+  }
+
+  function applyTheme() {
+    document.documentElement.dataset.theme = Store.settings().theme || 'auto';
+  }
+
+  /* ------------------------ экспорт / импорт данных ----------------------- */
+
+  function exportProgress() {
+    const blob = new Blob([Store.exportJSON()], { type: 'application/json' });
+    const name = 'boo2026-progress-' + new Date().toISOString().slice(0, 10) + '.json';
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    toast('Файл сформирован');
+  }
+
+  function importProgress(file) {
+    const fr = new FileReader();
+    fr.onload = function () {
+      try {
+        Store.importJSON(String(fr.result));
+        applyTheme();
+        toast('Прогресс загружен');
+        render();
+      } catch (e) {
+        toast('Не удалось прочитать файл');
+      }
+    };
+    fr.readAsText(file);
+  }
+
+  /* ------------------------------ события -------------------------------- */
+
+  $screen.addEventListener('click', function (e) {
+    const opt = e.target.closest('.opt[data-pos]');
+    if (opt && !opt.disabled) { onAnswer(Number(opt.dataset.pos)); return; }
+
+    const seg = e.target.closest('.seg__btn');
+    if (seg) {
+      if (seg.dataset.n !== undefined) { trainCfg.count = Number(seg.dataset.n); render(); return; }
+      if (seg.dataset.theme !== undefined) { studyTheme = Number(seg.dataset.theme); studyIdx = 0; render(); return; }
+      if (seg.dataset.t !== undefined) { Store.set('theme', seg.dataset.t); applyTheme(); render(); return; }
+    }
+
+    const btn = e.target.closest('[data-act]');
+    if (!btn) return;
+    const act = btn.dataset.act;
+
+    switch (act) {
+      case 'exam':        startExam(); break;
+      case 'train':       go('/train'); break;
+      case 'start-train': startTrain(); break;
+      case 'errors':      startErrors(); break;
+      case 'settings':    go('/settings'); break;
+      case 'next':        nextQuestion(); break;
+      case 'abort':       abortSession(); break;
+      case 'home':        session = null; go('/'); break;
+      case 'again': {
+        const items = session.items;
+        session = new Session(session.mode, shuffle(items), { instant: session.instant });
+        go('/run'); break;
+      }
+      case 'study-prev':  studyIdx--; render(); break;
+      case 'study-next':  studyIdx++; render(); break;
+      case 'study-jump': {
+        const list = QUESTIONS.filter(function (q) { return q.theme === studyTheme; });
+        const v = prompt('Номер вопроса (1–' + list.length + '):');
+        const n = parseInt(v, 10);
+        if (n >= 1 && n <= list.length) { studyIdx = n - 1; render(); }
+        break;
+      }
+      case 'export':      exportProgress(); break;
+      case 'import':      document.getElementById('file-import').click(); break;
+      case 'reset':
+        if (confirm('Удалить весь прогресс и историю экзаменов? Действие необратимо.')) {
+          Store.resetProgress(); toast('Прогресс сброшен'); render();
+        }
+        break;
+    }
+  });
+
+  $screen.addEventListener('change', function (e) {
+    const t = e.target;
+    if (t.dataset.theme !== undefined && t.type === 'checkbox') {
+      trainCfg.themes[t.dataset.theme] = t.checked; return;
+    }
+    if (t.id === 'only-new') { trainCfg.onlyNew = t.checked; return; }
+    if (t.dataset.set) { Store.set(t.dataset.set, t.checked); return; }
+    if (t.id === 'sel-timer') { Store.set('timerSec', Number(t.value)); return; }
+    if (t.id === 'sel-scope') { Store.set('examScope', t.value); return; }
+    if (t.id === 'file-import' && t.files && t.files[0]) { importProgress(t.files[0]); return; }
+  });
+
+  $back.addEventListener('click', function () {
+    if (session && !session.finished() && parseHash().path === '/run') { abortSession(); return; }
+    history.back();
+  });
+
+  window.addEventListener('hashchange', render);
+
+  /* Пересчёт оставшегося времени после возврата из фона: setInterval в iOS
+     приостанавливается, но дедлайн хранится абсолютным временем. */
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState !== 'visible') return;
+    if (session && session.mode === 'exam' && session.deadline) {
+      if (Date.now() >= session.deadline) { stopTimer(); finishSession(); }
+    }
+  });
+
+  /* Двойной тап-зум гасится через CSS touch-action: manipulation — это надёжнее
+     JS-перехвата touchend, который ломает быстрые последовательные нажатия. */
+
+  /* --------------------------- Service Worker ----------------------------- */
+
+  function registerSW() {
+    if (!('serviceWorker' in navigator)) return;
+    /* Регистрация возможна только в защищённом контексте. Проверяем именно
+       isSecureContext, а не протокол: он корректно покрывает https, localhost
+       и 127.0.0.1 и отсекает file:// — при открытии файла с диска приложение
+       просто работает без кэша SW, а не падает. */
+    if (!window.isSecureContext) return;
+    navigator.serviceWorker.register('sw.js').then(function (reg) {
+      reg.addEventListener('updatefound', function () {
+        const sw = reg.installing;
+        if (!sw) return;
+        sw.addEventListener('statechange', function () {
+          if (sw.state === 'installed' && navigator.serviceWorker.controller) {
+            toast('Доступно обновление — перезапустите приложение');
+          }
+        });
+      });
+    }).catch(function (e) { console.warn('[sw] не зарегистрирован', e); });
+  }
+
+  /* ------------------------------- старт ---------------------------------- */
+
+  applyTheme();
+  if (!location.hash) location.hash = '#/';
+  render();
+  document.getElementById('app').hidden = false;
+  document.getElementById('boot').hidden = true;
+  registerSW();
+})();
+
+</script>
+</body>
+</html>
