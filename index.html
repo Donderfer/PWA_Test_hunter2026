@@ -1019,13 +1019,27 @@ const Store = (function () {
     const pct = Math.round(s.learned / s.total * 100);
     const last = Store.exams()[0];
 
+    /* Показываем и «отвечено», и «освоено». Раньше была только освоенность,
+       и после нескольких верных ответов главная всё ещё писала 0 из 135 —
+       это читалось как «прогресс не сохранился». */
+    const touchedPct = Math.round(s.touched / s.total * 100);
+
     $screen.innerHTML =
       storageWarning() +
       '<div class="card">' +
-        '<div class="row"><div><div class="menu__title">Освоено вопросов</div>' +
-        '<div class="small muted">' + s.learned + ' из ' + s.total + ' · два верных ответа подряд</div></div>' +
+        '<div class="row"><div><div class="menu__title">Прогресс</div>' +
+        '<div class="small muted">Освоен вопрос после двух верных ответов подряд</div></div>' +
         '<div class="stat__v">' + pct + '%</div></div>' +
-        '<div class="bar mt8"><div class="bar__fill' + (pct === 100 ? ' bar__fill--ok' : '') + '" style="width:' + pct + '%"></div></div>' +
+        '<div class="bar mt8" style="position:relative">' +
+          '<div class="bar__fill" style="width:' + touchedPct + '%;opacity:.35"></div>' +
+          '<div class="bar__fill' + (pct === 100 ? ' bar__fill--ok' : '') +
+          '" style="width:' + pct + '%;position:absolute;top:0;left:0"></div>' +
+        '</div>' +
+        '<div class="row mt8 tiny muted">' +
+          '<span>Отвечено: <b style="color:var(--text)">' + s.touched + '</b> из ' + s.total + '</span>' +
+          '<span>Освоено: <b style="color:var(--text)">' + s.learned + '</b></span>' +
+          '<span>На исправлении: <b style="color:var(--text)">' + s.weak + '</b></span>' +
+        '</div>' +
       '</div>' +
 
       '<div class="menu">' +
